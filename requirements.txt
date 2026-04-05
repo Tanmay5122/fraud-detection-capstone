@@ -1,0 +1,34 @@
+# ── Fraud Detection Capstone — Requirements ──
+
+# Core data (stable wheels)
+pandas==2.1.4
+numpy==1.26.4
+
+# Database
+sqlalchemy==2.0.36
+
+# API layer
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+
+# HTTP requests
+requests==2.31.0
+python-dotenv==1.0.1
+
+# Synthetic data
+faker==24.8.0
+
+# PDF reporting
+reportlab==4.0.9
+
+# LLM SDK
+openai==1.30.1
+
+# Testing
+pytest==8.2.0
+pytest-asyncio==0.23.6
+httpx==0.27.0
+
+# Utilities
+python-dateutil==2.9.0
+tqdm==4.66.4
