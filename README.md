@@ -180,7 +180,7 @@ npx n8n
 | Phase | Week | Status |
 |---|---|---|
 | 1 — Research + environment setup | Week 1 | ✅ Complete |
-| 2 — Synthetic dataset generation | Week 2 | 🔲 Not started |
+| 2 — Synthetic dataset generation | Week 2 | ✅ Complete |
 | 3 — Rule engine + RPA Bot 1 | Week 3–4 | 🔲 Not started |
 | 4 — LLM reasoning agent | Week 5–6 | 🔲 Not started |
 | 5 — RPA Bot 2 (response executor) | Week 7 | 🔲 Not started |
