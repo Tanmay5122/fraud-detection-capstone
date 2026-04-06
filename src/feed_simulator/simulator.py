@@ -207,6 +207,33 @@ class FeedSimulator:
             logger.info("Feed simulator stopped by user.")
             print("\n Feed simulator stopped.")
 
+def get_next_batch(self, batch_size: int = 50) -> list[dict]:
+    """
+    1. Insert new transactions into DB
+    2. Fetch unprocessed transactions for rule engine
+    """
+    # Step 1: Insert new data
+    self.insert_batch(batch_size)
+
+    # Step 2: Get unprocessed transactions
+    transactions = self.get_unprocessed(limit=batch_size)
+
+    return transactions
+
+def enqueue_suspect(self, conn, txn: dict, result):
+    """
+    Add flagged transaction to suspect_queue
+    """
+    conn.execute("""
+        INSERT INTO suspect_queue
+        (txn_id, user_id, rules_triggered, rule_details)
+        VALUES (?, ?, ?, ?)
+    """, (
+        txn["txn_id"],
+        txn["user_id"],
+        ",".join(result.rules_triggered),
+        str(result.__dict__)
+    ))
 
 # ── CLI entry point ────────────────────────────────────────────────────────────
 
