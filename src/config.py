@@ -1,18 +1,15 @@
 import os
+from pathlib import Path
 from dotenv import load_dotenv
 
-load_dotenv()
-
-from pathlib import Path
-
-# Force correct path
-env_path = Path(__file__).resolve().parent.parent / ".env"
-load_dotenv(env_path)
+# Load .env from project root (two levels up from src/)
+_env_path = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(_env_path)
 
 # ── OpenRouter LLM ────────────────────────────────────────────────────────────
-OPENROUTER_API_KEY: str = os.getenv("OPENROUTER_API_KEY", "")
+OPENROUTER_API_KEY: str  = os.getenv("OPENROUTER_API_KEY", "")
 OPENROUTER_BASE_URL: str = "https://openrouter.ai/api/v1"
-OPENROUTER_MODEL: str = os.getenv("OPENROUTER_MODEL", "mistralai/mistral-7b-instruct:free")
+OPENROUTER_MODEL: str    = os.getenv("OPENROUTER_MODEL", "mistralai/mistral-7b-instruct:free")
 
 # ── Database ──────────────────────────────────────────────────────────────────
 DB_PATH: str = os.getenv("DB_PATH", "data/fraud_detection.db")

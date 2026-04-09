@@ -34,6 +34,14 @@ def init_db(db_path: str = DB_PATH):
     conn = sqlite3.connect(db_path)
     cur = conn.cursor()
 
+    # Persistent key-value store — keeps cursor position across runs
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS simulator_state (
+            key     TEXT PRIMARY KEY,
+            value   TEXT NOT NULL
+        )
+    """)
+
     cur.execute("""
         CREATE TABLE IF NOT EXISTS transactions (
             txn_id          TEXT PRIMARY KEY,
@@ -92,14 +100,39 @@ class FeedSimulator:
     """
     Reads the synthetic dataset CSV and drip-feeds rows into SQLite,
     simulating a real-time transaction stream.
+    Cursor position is persisted in the DB so runs pick up where they left off.
     """
 
     def __init__(self, csv_path: str = CSV_PATH, db_path: str = DB_PATH):
         self.csv_path = csv_path
         self.db_path = db_path
-        self._cursor_idx = 0
         self._df = None
+        init_db(self.db_path)                   # always create tables first
+        self._cursor_idx = self._load_cursor()  # resume from last position
         self._load_dataset()
+
+    # ── Cursor persistence ────────────────────────────────────────────────────
+
+    def _load_cursor(self) -> int:
+        """Read the last cursor position from DB, defaulting to 0."""
+        conn = sqlite3.connect(self.db_path)
+        row = conn.execute(
+            "SELECT value FROM simulator_state WHERE key='cursor_idx'"
+        ).fetchone()
+        conn.close()
+        return int(row[0]) if row else 0
+
+    def _save_cursor(self):
+        """Write the current cursor position to DB so next run resumes here."""
+        conn = sqlite3.connect(self.db_path)
+        conn.execute(
+            "INSERT OR REPLACE INTO simulator_state (key, value) VALUES ('cursor_idx', ?)",
+            (str(self._cursor_idx),)
+        )
+        conn.commit()
+        conn.close()
+
+    # ── Dataset ───────────────────────────────────────────────────────────────
 
     def _load_dataset(self):
         if not Path(self.csv_path).exists():
@@ -109,6 +142,8 @@ class FeedSimulator:
             )
         self._df = pd.read_csv(self.csv_path)
         logger.info(f"Loaded {len(self._df):,} transactions from {self.csv_path}")
+
+    # ── Core methods ──────────────────────────────────────────────────────────
 
     def insert_batch(self, batch_size: int = BATCH_SIZE) -> int:
         """
@@ -127,10 +162,10 @@ class FeedSimulator:
         end_idx = min(self._cursor_idx + batch_size, total)
         batch = self._df.iloc[self._cursor_idx:end_idx].copy()
         self._cursor_idx = end_idx
+        self._save_cursor()  # persist so next run continues from here
 
         # Give rows a fresh timestamp so they look "live"
         now = datetime.now()
-        batch = batch.copy()
         batch["timestamp"] = now.isoformat()
 
         conn = sqlite3.connect(self.db_path)
@@ -192,6 +227,27 @@ class FeedSimulator:
         conn.commit()
         conn.close()
 
+    def get_next_batch(self, batch_size: int = 50) -> list[dict]:
+        """
+        1. Insert the next unseen batch of transactions into DB
+        2. Return unprocessed transactions for the rule engine
+        """
+        self.insert_batch(batch_size)
+        return self.get_unprocessed(limit=batch_size)
+
+    def enqueue_suspect(self, conn, txn: dict, result):
+        """Add a flagged transaction to the suspect_queue."""
+        conn.execute("""
+            INSERT INTO suspect_queue
+            (txn_id, user_id, rules_triggered, rule_details)
+            VALUES (?, ?, ?, ?)
+        """, (
+            txn["txn_id"],
+            txn["user_id"],
+            ",".join(result.rules_triggered),
+            str(result.__dict__)
+        ))
+
     def run_loop(self, batch_size: int = BATCH_SIZE, interval: int = POLL_INTERVAL):
         """Run the feed simulator continuously."""
         logger.info(f"Feed simulator started — batch={batch_size}, interval={interval}s")
@@ -207,33 +263,6 @@ class FeedSimulator:
             logger.info("Feed simulator stopped by user.")
             print("\n Feed simulator stopped.")
 
-def get_next_batch(self, batch_size: int = 50) -> list[dict]:
-    """
-    1. Insert new transactions into DB
-    2. Fetch unprocessed transactions for rule engine
-    """
-    # Step 1: Insert new data
-    self.insert_batch(batch_size)
-
-    # Step 2: Get unprocessed transactions
-    transactions = self.get_unprocessed(limit=batch_size)
-
-    return transactions
-
-def enqueue_suspect(self, conn, txn: dict, result):
-    """
-    Add flagged transaction to suspect_queue
-    """
-    conn.execute("""
-        INSERT INTO suspect_queue
-        (txn_id, user_id, rules_triggered, rule_details)
-        VALUES (?, ?, ?, ?)
-    """, (
-        txn["txn_id"],
-        txn["user_id"],
-        ",".join(result.rules_triggered),
-        str(result.__dict__)
-    ))
 
 # ── CLI entry point ────────────────────────────────────────────────────────────
 

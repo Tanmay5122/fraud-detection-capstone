@@ -12,16 +12,34 @@ import argparse
 import logging
 import sqlite3
 import time
+from datetime import datetime
 
 from src.config import DB_PATH
 from src.feed_simulator.simulator import FeedSimulator
 from src.rule_engine.engine import RuleEngine
+from src.rule_engine.model import Transaction
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
 )
 logger = logging.getLogger(__name__)
+
+
+def dict_to_transaction(d: dict) -> Transaction:
+    """Convert a raw DB dict (from get_unprocessed) into a Transaction object."""
+    return Transaction(
+        txn_id=d["txn_id"],
+        user_id=d["user_id"],
+        timestamp=datetime.fromisoformat(d["timestamp"]),
+        amount=float(d["amount"]),
+        currency=d["currency"],
+        merchant_category=d["merchant_category"],
+        merchant_city=d["merchant_city"],
+        merchant_lat=float(d["merchant_lat"]),
+        merchant_lon=float(d["merchant_lon"]),
+        payment_method=d["payment_method"],
+    )
 
 
 def print_report():
@@ -59,22 +77,34 @@ def run_once(rules_only: bool = False, llm_batch: int = 20):
     rule_engine = RuleEngine()
 
     # ── Ingest + rule engine ─────────────────────────────────────────────────
-    transactions = sim.get_next_batch(batch_size=50)
-    if not transactions:
+    raw_transactions = sim.get_next_batch(batch_size=50)
+    if not raw_transactions:
         logger.info("No new transactions to process.")
         return
+
+    # Convert dicts → Transaction objects for the rule engine
+    transactions = []
+    for d in raw_transactions:
+        try:
+            transactions.append(dict_to_transaction(d))
+        except Exception as e:
+            logger.warning(f"Skipping malformed transaction {d.get('txn_id')}: {e}")
 
     flagged = 0
     conn = sqlite3.connect(DB_PATH)
     for txn in transactions:
         result = rule_engine.evaluate(txn)
-        if result.is_suspect:
-            sim.enqueue_suspect(conn, txn, result)
+        if result.flagged:                          # was: result.is_suspect
+            sim.enqueue_suspect(conn, txn.__dict__, result)
             flagged += 1
-            logger.info(f"🚨 {txn.transaction_id} flagged — rules: {result.rules_triggered}")
+            logger.info(f"🚨 {txn.txn_id} flagged — rules: {result.rules_triggered}")
         else:
-            logger.info(f"✅ {txn.transaction_id} clear")
+            logger.info(f"✅ {txn.txn_id} clear")
+    conn.commit()
     conn.close()
+
+    # Mark all processed transactions so they aren't re-evaluated next run
+    sim.mark_processed([txn.txn_id for txn in transactions])
 
     logger.info(f"Rule engine: {flagged}/{len(transactions)} flagged")
 

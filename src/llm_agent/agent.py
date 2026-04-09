@@ -2,9 +2,6 @@
 LLM Reasoning Agent — Phase 4
 Reads suspects from the suspect_queue table, enriches with user profile context,
 calls OpenRouter API for a structured verdict, and logs to llm_decisions table.
-
-This is the core research contribution: every decision includes a natural-language
-reasoning paragraph for explainability comparison against rule-only detection.
 """
 
 import json
@@ -27,7 +24,6 @@ from src.config import (
 
 logger = logging.getLogger(__name__)
 
-# ── Structured output schema (parsed from LLM JSON response) ─────────────────
 SYSTEM_PROMPT = """You are an expert fraud analyst for an Indian retail bank.
 You will be given a suspicious banking transaction and the customer's recent history.
 Your job is to decide if this is fraud or legitimate.
@@ -50,18 +46,14 @@ Rules:
 
 
 def _build_user_prompt(suspect_row: dict, profile: Optional[dict]) -> str:
-    """Construct the per-transaction prompt with all available context."""
     txn_block = f"""
 TRANSACTION UNDER REVIEW
 ─────────────────────────
-Transaction ID : {suspect_row['transaction_id']}
+Transaction ID : {suspect_row['txn_id']}
 User ID        : {suspect_row['user_id']}
-Amount         : ₹{suspect_row['amount']:,.2f}
-Type           : {suspect_row['transaction_type']}
-Location       : {suspect_row['location']}
-Timestamp      : {suspect_row['timestamp']}
 Rules Triggered: {suspect_row['rules_triggered']}
-Rule Score     : {suspect_row['rule_score']}
+Rule Details   : {suspect_row['rule_details']}
+Queued At      : {suspect_row['queued_at']}
 """
 
     if profile:
@@ -88,7 +80,10 @@ Recent Transaction History (last 5):
 class FraudAgent:
     def __init__(self):
         if not OPENROUTER_API_KEY:
-            raise ValueError("OPENROUTER_API_KEY not set in .env")
+            raise ValueError(
+                "OPENROUTER_API_KEY is not set. "
+                "Add it to your .env file: OPENROUTER_API_KEY=sk-or-..."
+            )
 
         self.client = OpenAI(
             api_key=OPENROUTER_API_KEY,
@@ -98,145 +93,125 @@ class FraudAgent:
         self.profiles = self._load_profiles()
         logger.info(f"FraudAgent initialised — model: {self.model}")
 
-    # ── Profile loading ───────────────────────────────────────────────────────
-
     def _load_profiles(self) -> dict:
-     path = Path(USER_PROFILES_PATH)
-     if not path.exists():
-        logger.warning(f"User profiles not found at {USER_PROFILES_PATH}")
-        return {}
+        path = Path(USER_PROFILES_PATH)
+        if not path.exists():
+            logger.warning(f"User profiles not found at {USER_PROFILES_PATH}")
+            return {}
 
-     with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
 
-    # ✅ Case 1: your JSON is already a dict
-     if isinstance(data, dict):
-        return data
+        if isinstance(data, dict):
+            return data                                           # already keyed by user_id
+        if isinstance(data, list):
+            return {p["user_id"]: p for p in data if isinstance(p, dict)}
 
-    # ✅ Case 2: list of profiles
-     if isinstance(data, list):
-        return {p["user_id"]: p for p in data if isinstance(p, dict)}
-
-     raise ValueError("Invalid user_profiles.json format")
-
-    # ── Database helpers ──────────────────────────────────────────────────────
+        raise ValueError("Invalid user_profiles.json format — must be dict or list")
 
     def _get_pending_suspects(self, conn: sqlite3.Connection, limit: int = 20) -> list[dict]:
         conn.row_factory = sqlite3.Row
         cur = conn.execute(
-            """
-            SELECT * FROM suspect_queue
-            WHERE status = 'PENDING'
-            ORDER BY queued_at ASC
-            LIMIT ?
-            """,
+            "SELECT * FROM suspect_queue WHERE llm_processed = 0 ORDER BY queued_at ASC LIMIT ?",
             (limit,),
         )
         rows = [dict(r) for r in cur.fetchall()]
         conn.row_factory = None
         return rows
 
-    def _mark_processing(self, conn: sqlite3.Connection, suspect_id: int):
-        conn.execute(
-            "UPDATE suspect_queue SET status = 'PROCESSING' WHERE id = ?",
-            (suspect_id,),
-        )
-        conn.commit()
-
     def _log_decision(self, conn: sqlite3.Connection, suspect: dict, decision: dict):
         conn.execute(
             """
             INSERT INTO llm_decisions
-                (transaction_id, user_id, verdict, confidence,
-                 reasoning, recommended_action, model_used, decided_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                (txn_id, user_id, verdict, confidence, rules_triggered,
+                 reasoning, recommended_action, processing_time_ms, decided_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
-                suspect["transaction_id"],
+                suspect["txn_id"],
                 suspect["user_id"],
                 decision["verdict"],
                 decision["confidence"],
+                suspect["rules_triggered"],
                 decision["reasoning"],
                 decision["recommended_action"],
-                self.model,
+                decision.get("processing_time_ms", 0),
                 datetime.utcnow().isoformat(),
             ),
         )
         conn.execute(
-            "UPDATE suspect_queue SET status = 'PROCESSED' WHERE id = ?",
+            "UPDATE suspect_queue SET llm_processed = 1 WHERE id = ?",
             (suspect["id"],),
         )
         conn.commit()
 
-    def _mark_error(self, conn: sqlite3.Connection, suspect_id: int, error: str):
-        conn.execute(
-            "UPDATE suspect_queue SET status = 'ERROR' WHERE id = ?",
-            (suspect_id,),
-        )
-        conn.commit()
-        logger.error(f"Suspect {suspect_id} marked ERROR: {error}")
-
-    # ── LLM call ─────────────────────────────────────────────────────────────
-
     def _call_llm(self, prompt: str, retries: int = 2) -> dict:
         for attempt in range(retries + 1):
             try:
+                t0 = time.time()
                 response = self.client.chat.completions.create(
                     model=self.model,
                     messages=[
                         {"role": "system", "content": SYSTEM_PROMPT},
                         {"role": "user",   "content": prompt},
                     ],
-                    temperature=0.1,   # low temp for consistent structured output
+                    temperature=0.1,
                     max_tokens=400,
+                    extra_headers={
+                        "HTTP-Referer": "https://github.com/Tanmay5122/fraud-detection-capstone",
+                        "X-Title": "Fraud Detection Capstone",
+                    },
                 )
+                elapsed_ms = int((time.time() - t0) * 1000)
                 raw = response.choices[0].message.content.strip()
 
                 # Strip accidental markdown fences
                 if raw.startswith("```"):
-                    raw = raw.split("```")[1]
+                    parts = raw.split("```")
+                    raw = parts[1]
                     if raw.startswith("json"):
                         raw = raw[4:]
+                raw = raw.strip()
 
                 decision = json.loads(raw)
 
-                # Validate required keys
                 required = {"verdict", "confidence", "reasoning", "recommended_action"}
                 if not required.issubset(decision.keys()):
-                    raise ValueError(f"Missing keys in LLM response: {decision.keys()}")
+                    raise ValueError(f"Missing keys in LLM response: {set(decision.keys())}")
 
-                # Clamp confidence
                 decision["confidence"] = max(0.0, min(1.0, float(decision["confidence"])))
+                decision["processing_time_ms"] = elapsed_ms
                 return decision
 
             except (json.JSONDecodeError, ValueError) as e:
-                logger.warning(f"LLM parse error (attempt {attempt+1}): {e}")
+                logger.warning(f"LLM parse error (attempt {attempt + 1}): {e}")
                 if attempt == retries:
                     raise
-                time.sleep(1)
+                time.sleep(2)
 
-        raise RuntimeError("LLM call failed after retries")
-
-    # ── Main processing loop ──────────────────────────────────────────────────
+        raise RuntimeError("LLM call failed after all retries")
 
     def process_batch(self, limit: int = 20) -> dict:
         """
         Process up to `limit` pending suspects.
-        Returns a summary dict for logging/API responses.
+        Returns a summary dict for logging / API responses.
         """
         conn = sqlite3.connect(DB_PATH)
         suspects = self._get_pending_suspects(conn, limit)
 
         if not suspects:
-            logger.info("No pending suspects to process.")
+            logger.info("No pending suspects in the queue.")
             conn.close()
-            return {"processed": 0, "fraud": 0, "legitimate": 0, "review": 0, "errors": 0}
+            return {
+                "processed": 0, "fraud": 0, "legitimate": 0,
+                "review": 0, "errors": 0,
+                "message": "No suspects queued. Run /run-ingest-only first to populate the queue.",
+            }
 
         stats = {"processed": 0, "fraud": 0, "legitimate": 0, "review": 0, "errors": 0}
 
         for suspect in suspects:
-            txn_id = suspect["transaction_id"]
-            self._mark_processing(conn, suspect["id"])
+            txn_id  = suspect["txn_id"]
             profile = self.profiles.get(suspect["user_id"])
 
             try:
@@ -244,12 +219,13 @@ class FraudAgent:
                 decision = self._call_llm(prompt)
                 self._log_decision(conn, suspect, decision)
 
-                verdict = decision["verdict"]
+                verdict    = decision["verdict"]
                 confidence = decision["confidence"]
-                action = decision["recommended_action"]
+                action     = decision["recommended_action"]
 
                 stats["processed"] += 1
-                stats[verdict.lower() if verdict.lower() in stats else "review"] += 1
+                key = verdict.lower() if verdict.lower() in stats else "review"
+                stats[key] += 1
 
                 icon = "🔴" if verdict == "FRAUD" else ("🟡" if verdict == "REVIEW" else "🟢")
                 logger.info(
@@ -259,7 +235,7 @@ class FraudAgent:
 
             except Exception as e:
                 stats["errors"] += 1
-                self._mark_error(conn, suspect["id"], str(e))
+                logger.error(f"Error processing suspect {txn_id}: {e}")
 
             time.sleep(0.3)   # polite rate-limiting for free-tier OpenRouter
 
