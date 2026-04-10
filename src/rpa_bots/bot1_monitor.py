@@ -55,13 +55,16 @@ def get_agent():
     """Lazy-load FraudAgent so a missing API key doesn't crash the whole server."""
     global _agent
     if _agent is None:
-        from src.llm_agent.agent import FraudAgent
-        _agent = FraudAgent()
+        try:
+            from src.llm_agent.agent import FraudAgent
+            _agent = FraudAgent()
+        except ValueError as e:
+            raise ValueError(f"LLM agent initialization failed: {e}")
     return _agent
 
 
 def dict_to_transaction(d: dict) -> Transaction:
-    """Convert a raw DB dict into a Transaction object for the rule engine."""
+    """Convert a raw dict into a Transaction object for the rule engine."""
     return Transaction(
         txn_id=d["txn_id"],
         user_id=d["user_id"],
@@ -138,11 +141,15 @@ def run_cycle(req: CycleRequest):
         sim.mark_processed(processed_ids)
 
         # Step 3 — LLM agent (lazy — gives clean error if key missing)
+        llm_stats = {"processed": 0, "fraud": 0, "legitimate": 0, "review": 0, "errors": 0}
         try:
             agent = get_agent()
             llm_stats = agent.process_batch(limit=req.llm_batch_size)
+        except ValueError as e:
+            logger.error(f"LLM agent not configured: {e}")
+            llm_stats = {"error": str(e), "processed": 0}
         except Exception as e:
-            logger.error(f"LLM agent skipped: {e}")
+            logger.error(f"LLM agent failed: {e}")
             llm_stats = {"error": str(e), "processed": 0}
 
         logger.info(f"/run-cycle: ingested={ingested} flagged={flagged} llm={llm_stats}")
@@ -186,6 +193,7 @@ def run_llm_only(batch_size: int = Query(default=20, ge=1, le=200)):
         }
     except ValueError as e:
         # Missing API key — give a clear message
+        logger.error(f"LLM agent configuration error: {e}")
         raise HTTPException(
             status_code=503,
             detail=f"LLM agent not configured: {e}. Set OPENROUTER_API_KEY in your .env file.",

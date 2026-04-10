@@ -1,18 +1,15 @@
-"""
-LLM Reasoning Agent — Phase 4
-Reads suspects from the suspect_queue table, enriches with user profile context,
-calls OpenRouter API for a structured verdict, and logs to llm_decisions table.
-"""
-
 import json
 import logging
 import sqlite3
 import time
+import random
 from datetime import datetime
 from pathlib import Path
 from typing import Optional
+import ast
 
 from openai import OpenAI
+from openai import RateLimitError
 
 from src.config import (
     DB_PATH,
@@ -24,225 +21,318 @@ from src.config import (
 
 logger = logging.getLogger(__name__)
 
-SYSTEM_PROMPT = """You are an expert fraud analyst for an Indian retail bank.
-You will be given a suspicious banking transaction and the customer's recent history.
-Your job is to decide if this is fraud or legitimate.
 
-You MUST respond with ONLY valid JSON — no markdown, no explanation outside the JSON.
-Use exactly this schema:
+SYSTEM_PROMPT = """You are an expert fraud analyst for an Indian retail bank.
+You MUST respond ONLY with valid JSON.
+
 {
   "verdict": "FRAUD" | "LEGITIMATE" | "REVIEW",
   "confidence": <float 0.0–1.0>,
-  "reasoning": "<2–4 sentence natural-language explanation of your decision>",
+  "reasoning": "<2–4 sentence explanation>",
   "recommended_action": "FREEZE_ACCOUNT" | "SEND_ALERT" | "MONITOR" | "CLEAR"
 }
-
-Rules:
-- FRAUD + confidence >= 0.75 → recommended_action must be FREEZE_ACCOUNT
-- FRAUD + confidence < 0.75  → recommended_action must be SEND_ALERT
-- REVIEW                      → recommended_action must be MONITOR
-- LEGITIMATE                  → recommended_action must be CLEAR
 """
 
 
-def _build_user_prompt(suspect_row: dict, profile: Optional[dict]) -> str:
+def _build_user_prompt(suspect: dict, txn: dict, profile: Optional[dict]) -> str:
     txn_block = f"""
-TRANSACTION UNDER REVIEW
-─────────────────────────
-Transaction ID : {suspect_row['txn_id']}
-User ID        : {suspect_row['user_id']}
-Rules Triggered: {suspect_row['rules_triggered']}
-Rule Details   : {suspect_row['rule_details']}
-Queued At      : {suspect_row['queued_at']}
+Transaction ID : {suspect.get('txn_id')}
+User ID        : {suspect.get('user_id')}
+Amount         : ₹{txn.get('amount')}
+Category       : {txn.get('merchant_category')}
+Location       : {txn.get('merchant_city')}
+Timestamp      : {txn.get('timestamp')}
+Rules Triggered: {suspect.get('rules_triggered')}
 """
 
     if profile:
-        history_str = json.dumps(profile.get("recent_transactions", [])[:5], indent=2)
         profile_block = f"""
-CUSTOMER PROFILE
-─────────────────────────
-Name            : {profile.get('name', 'N/A')}
-City            : {profile.get('city', 'N/A')}
-Account Type    : {profile.get('account_type', 'N/A')}
-Avg Monthly Txn : ₹{profile.get('avg_monthly_transaction', 0):,.2f}
-Known Locations : {', '.join(profile.get('known_locations', []))}
-Risk Tier       : {profile.get('risk_tier', 'N/A')}
-
-Recent Transaction History (last 5):
-{history_str}
+Customer Profile:
+Avg Spend: ₹{profile.get('avg_monthly_spend')}
+Max Txn  : ₹{profile.get('typical_max_txn')}
 """
     else:
-        profile_block = "\nCUSTOMER PROFILE\n─────────────────────────\nNo profile found for this user.\n"
+        profile_block = "\nNo profile\n"
 
-    return txn_block + profile_block + "\nAnalyse the transaction and respond with JSON only."
+    return txn_block + profile_block
 
 
 class FraudAgent:
     def __init__(self):
         if not OPENROUTER_API_KEY:
-            raise ValueError(
-                "OPENROUTER_API_KEY is not set. "
-                "Add it to your .env file: OPENROUTER_API_KEY=sk-or-..."
-            )
+            raise ValueError("OPENROUTER_API_KEY not set")
 
         self.client = OpenAI(
             api_key=OPENROUTER_API_KEY,
             base_url=OPENROUTER_BASE_URL,
         )
+
         self.model = OPENROUTER_MODEL
         self.profiles = self._load_profiles()
-        logger.info(f"FraudAgent initialised — model: {self.model}")
 
-    def _load_profiles(self) -> dict:
+    def _load_profiles(self):
         path = Path(USER_PROFILES_PATH)
+
         if not path.exists():
-            logger.warning(f"User profiles not found at {USER_PROFILES_PATH}")
+            logger.warning(f"User profiles not found at {path}")
             return {}
 
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        try:
+            with open(path, "r") as f:
+                data = json.load(f)
 
-        if isinstance(data, dict):
-            return data                                           # already keyed by user_id
-        if isinstance(data, list):
-            return {p["user_id"]: p for p in data if isinstance(p, dict)}
+            if isinstance(data, dict):
+                return data
+            if isinstance(data, list):
+                return {p["user_id"]: p for p in data}
 
-        raise ValueError("Invalid user_profiles.json format — must be dict or list")
+            return {}
+        except Exception as e:
+            logger.error(f"Failed to load profiles: {e}")
+            return {}
 
-    def _get_pending_suspects(self, conn: sqlite3.Connection, limit: int = 20) -> list[dict]:
+    def _get_pending_suspects(self, conn, limit):
+        """Get suspects from DB - returns dict rows"""
         conn.row_factory = sqlite3.Row
-        cur = conn.execute(
-            "SELECT * FROM suspect_queue WHERE llm_processed = 0 ORDER BY queued_at ASC LIMIT ?",
-            (limit,),
-        )
-        rows = [dict(r) for r in cur.fetchall()]
-        conn.row_factory = None
-        return rows
 
-    def _log_decision(self, conn: sqlite3.Connection, suspect: dict, decision: dict):
-        conn.execute(
+        rows = conn.execute(
             """
-            INSERT INTO llm_decisions
-                (txn_id, user_id, verdict, confidence, rules_triggered,
-                 reasoning, recommended_action, processing_time_ms, decided_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+            SELECT sq.*, t.*
+            FROM suspect_queue sq
+            LEFT JOIN transactions t ON t.txn_id = sq.txn_id
+            WHERE sq.llm_processed = 0
+            LIMIT ?
             """,
-            (
-                suspect["txn_id"],
-                suspect["user_id"],
-                decision["verdict"],
-                decision["confidence"],
-                suspect["rules_triggered"],
-                decision["reasoning"],
-                decision["recommended_action"],
-                decision.get("processing_time_ms", 0),
-                datetime.utcnow().isoformat(),
-            ),
-        )
-        conn.execute(
-            "UPDATE suspect_queue SET llm_processed = 1 WHERE id = ?",
-            (suspect["id"],),
-        )
-        conn.commit()
+            (limit,),
+        ).fetchall()
 
-    def _call_llm(self, prompt: str, retries: int = 2) -> dict:
-        for attempt in range(retries + 1):
+        return [dict(r) for r in rows]
+
+    def _safe_parse_list(self, value):
+        """Safely convert string list to actual list"""
+        if isinstance(value, list):
+            return value
+        if isinstance(value, str):
             try:
-                t0 = time.time()
+                parsed = ast.literal_eval(value)
+                if isinstance(parsed, list):
+                    return parsed
+                return [value]
+            except:
+                return [value]
+        return []
+
+    def _safe_parse_dict(self, value):
+        """Safely convert string dict to actual dict"""
+        if isinstance(value, dict):
+            return value
+        if isinstance(value, str):
+            try:
+                parsed = ast.literal_eval(value)
+                if isinstance(parsed, dict):
+                    return parsed
+                return {"raw": value}
+            except:
+                return {"raw": value}
+        return {}
+
+    def _call_llm(self, prompt, txn_id=None):
+        """
+        Call OpenRouter API with AGGRESSIVE retry logic for free models.
+        Free tier = strict rate limits (429 errors), so we need long waits + jitter.
+        
+        Strategy:
+        - Attempt 1: Wait 5s
+        - Attempt 2: Wait 10s
+        - Attempt 3: Wait 20s
+        - Attempt 4: Wait 40s
+        - Attempt 5: Wait 80s
+        (Plus random 0-2s jitter to avoid thundering herd)
+        """
+        max_retries = 5
+        base_wait = 5  # Start with 5 seconds
+        
+        for attempt in range(max_retries):
+            try:
+                logger.info(f"[{txn_id}] 🚀 LLM attempt {attempt + 1}/{max_retries}...")
+
                 response = self.client.chat.completions.create(
                     model=self.model,
                     messages=[
                         {"role": "system", "content": SYSTEM_PROMPT},
-                        {"role": "user",   "content": prompt},
+                        {"role": "user", "content": prompt},
                     ],
-                    temperature=0.1,
-                    max_tokens=400,
-                    extra_headers={
-                        "HTTP-Referer": "https://github.com/Tanmay5122/fraud-detection-capstone",
-                        "X-Title": "Fraud Detection Capstone",
-                    },
+                    temperature=0.7,
+                    max_tokens=500,
                 )
-                elapsed_ms = int((time.time() - t0) * 1000)
-                raw = response.choices[0].message.content.strip()
 
-                # Strip accidental markdown fences
-                if raw.startswith("```"):
-                    parts = raw.split("```")
-                    raw = parts[1]
-                    if raw.startswith("json"):
-                        raw = raw[4:]
-                raw = raw.strip()
+                raw = response.choices[0].message.content
+                logger.debug(f"[{txn_id}] ✅ LLM response: {raw}")
+                
+                # Successfully got response - parse it
+                try:
+                    return json.loads(raw)
+                except json.JSONDecodeError:
+                    logger.error(f"[{txn_id}] ❌ Failed to parse JSON: {raw}")
+                    return {
+                        "verdict": "REVIEW",
+                        "confidence": 0.5,
+                        "reasoning": "JSON parsing error",
+                        "recommended_action": "MONITOR",
+                    }
 
-                decision = json.loads(raw)
-
-                required = {"verdict", "confidence", "reasoning", "recommended_action"}
-                if not required.issubset(decision.keys()):
-                    raise ValueError(f"Missing keys in LLM response: {set(decision.keys())}")
-
-                decision["confidence"] = max(0.0, min(1.0, float(decision["confidence"])))
-                decision["processing_time_ms"] = elapsed_ms
-                return decision
-
-            except (json.JSONDecodeError, ValueError) as e:
-                logger.warning(f"LLM parse error (attempt {attempt + 1}): {e}")
-                if attempt == retries:
-                    raise
-                time.sleep(2)
-
-        raise RuntimeError("LLM call failed after all retries")
-
-    def process_batch(self, limit: int = 20) -> dict:
-        """
-        Process up to `limit` pending suspects.
-        Returns a summary dict for logging / API responses.
-        """
-        conn = sqlite3.connect(DB_PATH)
-        suspects = self._get_pending_suspects(conn, limit)
-
-        if not suspects:
-            logger.info("No pending suspects in the queue.")
-            conn.close()
-            return {
-                "processed": 0, "fraud": 0, "legitimate": 0,
-                "review": 0, "errors": 0,
-                "message": "No suspects queued. Run /run-ingest-only first to populate the queue.",
-            }
-
-        stats = {"processed": 0, "fraud": 0, "legitimate": 0, "review": 0, "errors": 0}
-
-        for suspect in suspects:
-            txn_id  = suspect["txn_id"]
-            profile = self.profiles.get(suspect["user_id"])
-
-            try:
-                prompt   = _build_user_prompt(suspect, profile)
-                decision = self._call_llm(prompt)
-                self._log_decision(conn, suspect, decision)
-
-                verdict    = decision["verdict"]
-                confidence = decision["confidence"]
-                action     = decision["recommended_action"]
-
-                stats["processed"] += 1
-                key = verdict.lower() if verdict.lower() in stats else "review"
-                stats[key] += 1
-
-                icon = "🔴" if verdict == "FRAUD" else ("🟡" if verdict == "REVIEW" else "🟢")
-                logger.info(
-                    f"{icon} {txn_id} | {verdict} ({confidence:.0%}) | "
-                    f"{action} | {decision['reasoning'][:80]}…"
-                )
+            except RateLimitError as e:
+                if attempt < max_retries - 1:
+                    # Exponential backoff: 5s, 10s, 20s, 40s, 80s
+                    wait_time = base_wait * (2 ** attempt)
+                    
+                    # Add random jitter to avoid thundering herd
+                    jitter = random.uniform(0, 2)
+                    total_wait = wait_time + jitter
+                    
+                    logger.warning(
+                        f"[{txn_id}] ⏳ RATE LIMITED (429). "
+                        f"Waiting {total_wait:.1f}s before retry {attempt + 2}/{max_retries}... "
+                        f"(This is normal for free tier)"
+                    )
+                    time.sleep(total_wait)
+                else:
+                    logger.error(
+                        f"[{txn_id}] ❌ RATE LIMITED after {max_retries} attempts. "
+                        f"Will mark as REVIEW to try later."
+                    )
+                    return {
+                        "verdict": "REVIEW",
+                        "confidence": 0.2,
+                        "reasoning": "LLM service rate limited. Will process in next batch.",
+                        "recommended_action": "MONITOR",
+                    }
 
             except Exception as e:
-                stats["errors"] += 1
-                logger.error(f"Error processing suspect {txn_id}: {e}")
+                logger.error(f"[{txn_id}] ❌ LLM error: {e}")
+                return {
+                    "verdict": "REVIEW",
+                    "confidence": 0.3,
+                    "reasoning": f"LLM service error",
+                    "recommended_action": "MONITOR",
+                }
 
-            time.sleep(0.3)   # polite rate-limiting for free-tier OpenRouter
+        # Fallback
+        return {
+            "verdict": "REVIEW",
+            "confidence": 0.2,
+            "reasoning": "Could not reach LLM",
+            "recommended_action": "MONITOR",
+        }
 
-        conn.close()
-        logger.info(
-            f"Batch complete — processed:{stats['processed']} "
-            f"fraud:{stats['fraud']} legit:{stats['legitimate']} "
-            f"review:{stats['review']} errors:{stats['errors']}"
-        )
-        return stats
+    def process_batch(self, limit=20):
+        """Process suspects and get LLM verdicts"""
+        conn = sqlite3.connect(DB_PATH)
+
+        try:
+            suspects = self._get_pending_suspects(conn, limit)
+            
+            if not suspects:
+                logger.info("No pending suspects to process")
+                return {
+                    "processed": 0,
+                    "fraud": 0,
+                    "legitimate": 0,
+                    "review": 0,
+                    "errors": 0,
+                }
+            
+            logger.info(f"📊 Processing {len(suspects)} pending suspects...")
+
+            stats = {
+                "processed": 0,
+                "fraud": 0,
+                "legitimate": 0,
+                "review": 0,
+                "errors": 0,
+            }
+
+            for idx, row in enumerate(suspects, 1):
+                txn_id = None
+                try:
+                    # Row is already a dict from sqlite3.Row
+                    txn_id = row.get("txn_id")
+                    user_id = row.get("user_id")
+
+                    logger.info(f"[{idx}/{len(suspects)}] Processing {txn_id}...")
+
+                    # Safe parse rules_triggered
+                    rules_triggered = self._safe_parse_list(row.get("rules_triggered"))
+                    
+                    # Safe parse rule_details
+                    rule_details = self._safe_parse_dict(row.get("rule_details"))
+
+                    suspect = {
+                        "txn_id": txn_id,
+                        "user_id": user_id,
+                        "rules_triggered": rules_triggered,
+                        "rule_details": rule_details,
+                    }
+
+                    txn = {
+                        "txn_id": row.get("txn_id"),
+                        "user_id": row.get("user_id"),
+                        "amount": row.get("amount"),
+                        "merchant_category": row.get("merchant_category"),
+                        "merchant_city": row.get("merchant_city"),
+                        "timestamp": row.get("timestamp"),
+                    }
+
+                    profile = self.profiles.get(user_id)
+                    prompt = _build_user_prompt(suspect, txn, profile)
+
+                    # Call LLM with aggressive retry logic for free tier
+                    decision = self._call_llm(prompt, txn_id=txn_id)
+
+                    # Store decision
+                    conn.execute(
+                        """
+                        INSERT INTO llm_decisions
+                        (txn_id, user_id, verdict, confidence, reasoning, recommended_action, rules_triggered, rule_details, decided_at)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        """,
+                        (
+                            txn_id,
+                            user_id,
+                            decision.get("verdict", "REVIEW"),
+                            decision.get("confidence", 0.5),
+                            decision.get("reasoning", ""),
+                            decision.get("recommended_action", "MONITOR"),
+                            str(rules_triggered),
+                            str(rule_details),
+                            datetime.utcnow().isoformat(),
+                        ),
+                    )
+
+                    # Mark as processed
+                    conn.execute(
+                        "UPDATE suspect_queue SET llm_processed = 1 WHERE txn_id = ?",
+                        (txn_id,),
+                    )
+
+                    stats["processed"] += 1
+                    verdict_key = decision.get("verdict", "review").lower()
+                    if verdict_key in stats:
+                        stats[verdict_key] += 1
+
+                    logger.info(f"✅ {txn_id} → {decision.get('verdict')} (confidence: {decision.get('confidence')})")
+
+                except Exception as e:
+                    stats["errors"] += 1
+                    logger.error(f"❌ Failed to process {txn_id}: {e}")
+                    continue
+
+            conn.commit()
+            logger.info(f"✅ Batch complete: {stats}")
+            return stats
+
+        except Exception as e:
+            logger.error(f"❌ Batch processing failed: {e}", exc_info=True)
+            raise
+        finally:
+            conn.close()
