@@ -1,0 +1,143 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Environment variables (NEVER commit API keys)
+.env
+.env.local
+.env.*.local
+
+# Database files (can rebuild from CSV)
+*.db
+*.sqlite
+*.sqlite3
+fraud_detection.db
+fraud_detection.db-wal
+fraud_detection.db-shm
+
+# Generated files
+*.log
+*.tmp
+*.bak
+*.csv~ 
+*.xlsx~
+
+# Outputs (can regenerate)
+outputs/
+logs/
+*.pdf
+
+# Node modules (if using n8n)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Temporary files
+*.temp
+*.tmp
+*._*
+.~*
+
+# Cache
+.cache/
+*.cache
+.pytest_cache/
+
+# Data files (raw, can be in .gitignore or tracked)
+# Uncomment to ignore large data files:
+# data/raw/*.csv
+# data/processed/*.csv
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# VS Code settings per workspace
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+
+# Mac
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# SSL certificates (if any)
+*.pem
+*.key
+*.crt
+
+# Sensitive files
+secrets.json
+credentials.json
+*.pfx
+*.p12

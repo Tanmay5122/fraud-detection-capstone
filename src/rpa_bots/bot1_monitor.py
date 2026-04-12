@@ -315,3 +315,150 @@ def pending_suspects(limit: int = Query(default=10, ge=1, le=100)):
         return {"pending": [dict(r) for r in rows], "count": len(rows)}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+"""
+Add this to src/rpa_bots/bot1_monitor.py
+
+New endpoints:
+- GET /fraud-alerts → Get unprocessed FRAUD verdicts
+- POST /execute-fraud-response → Execute Bot 2 on recent frauds
+- GET /response-history → View executed responses
+"""
+
+# ADD THESE IMPORTS TO TOP OF bot1_monitor.py
+from src.rpa_bots.bot2_responder import FraudResponder
+
+# ADD THESE ENDPOINTS TO bot1_monitor.py (after existing endpoints)
+
+@app.get("/fraud-alerts")
+def fraud_alerts(limit: int = Query(default=10, ge=1, le=100)):
+    """
+    Get FRAUD verdicts waiting for response execution.
+    
+    GET http://localhost:8000/fraud-alerts?limit=5
+    """
+    try:
+        responder = FraudResponder()
+        frauds = responder.get_unprocessed_fraud(limit)
+        
+        return {
+            "unprocessed_frauds": len(frauds),
+            "frauds": [
+                {
+                    "txn_id": f["txn_id"],
+                    "user_id": f["user_id"],
+                    "verdict": f["verdict"],
+                    "confidence": f["confidence"],
+                    "reasoning": f["reasoning"][:100],
+                    "decided_at": f["decided_at"]
+                }
+                for f in frauds
+            ]
+        }
+    except Exception as e:
+        logger.exception("fraud-alerts failed")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/execute-fraud-response")
+def execute_fraud_response(batch_size: int = Query(default=5, ge=1, le=50)):
+    """
+    Execute Bot 2 responses on recent FRAUD verdicts.
+    
+    Runs:
+    1. Account freeze (mock API)
+    2. Alert email (SMTP)
+    3. PDF report generation
+    
+    POST http://localhost:8000/execute-fraud-response?batch_size=5
+    
+    Response:
+    {
+      "status": "ok",
+      "processed": 5,
+      "actions": {
+        "frozen_accounts": 5,
+        "emails_sent": 5,
+        "pdfs_generated": 5
+      },
+      "results": [...]
+    }
+    """
+    try:
+        responder = FraudResponder()
+        batch_result = responder.process_batch(limit=batch_size)
+        
+        if not batch_result['results']:
+            return {
+                "status": "ok",
+                "processed": 0,
+                "message": "No unprocessed FRAUD verdicts"
+            }
+        
+        # Count successes
+        freeze_ok = sum(
+            1 for r in batch_result['results']
+            if r['actions']['freeze_account']['status'] == 'success'
+        )
+        email_ok = sum(
+            1 for r in batch_result['results']
+            if r['actions']['send_email']['status'] == 'success'
+        )
+        pdf_ok = sum(
+            1 for r in batch_result['results']
+            if r['actions']['generate_pdf']['status'] == 'success'
+        )
+        
+        return {
+            "status": "ok",
+            "processed": batch_result['processed'],
+            "actions": {
+                "frozen_accounts": freeze_ok,
+                "emails_sent": email_ok,
+                "pdfs_generated": pdf_ok
+            },
+            "results": batch_result['results'],
+            "timestamp": datetime.utcnow().isoformat()
+        }
+    
+    except Exception as e:
+        logger.exception("execute-fraud-response failed")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/response-history")
+def response_history(limit: int = Query(default=20, ge=1, le=100)):
+    """
+    View executed fraud responses.
+    
+    GET http://localhost:8000/response-history?limit=100
+    """
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        conn.row_factory = sqlite3.Row
+        rows = conn.execute("""
+            SELECT txn_id, user_id, verdict, confidence,
+                   decided_at, responded_at, reasoning
+            FROM llm_decisions
+            WHERE verdict = 'FRAUD' AND responded_at IS NOT NULL
+            ORDER BY responded_at DESC
+            LIMIT ?
+        """, (limit,)).fetchall()
+        conn.close()
+        
+        return {
+            "total_executed": len(rows),
+            "responses": [
+                {
+                    "txn_id": r["txn_id"],
+                    "user_id": r["user_id"],
+                    "verdict": r["verdict"],
+                    "confidence": r["confidence"],
+                    "decided_at": r["decided_at"],
+                    "responded_at": r["responded_at"]
+                }
+                for r in rows
+            ]
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

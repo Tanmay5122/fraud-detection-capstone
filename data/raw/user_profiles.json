@@ -1,0 +1,5002 @@
+{
+  "USR_0001": {
+    "user_id": "USR_0001",
+    "name": "Arnav Sabharwal",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 1794,
+    "typical_max_txn": 5950,
+    "account_age_days": 2831
+  },
+  "USR_0002": {
+    "user_id": "USR_0002",
+    "name": "Neysa Singh",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 6778,
+    "typical_max_txn": 27736,
+    "account_age_days": 3138
+  },
+  "USR_0003": {
+    "user_id": "USR_0003",
+    "name": "Neelofar Sawhney",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 3421,
+    "typical_max_txn": 16854,
+    "account_age_days": 370
+  },
+  "USR_0004": {
+    "user_id": "USR_0004",
+    "name": "Ishita Raval",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 11168,
+    "typical_max_txn": 48672,
+    "account_age_days": 2785
+  },
+  "USR_0005": {
+    "user_id": "USR_0005",
+    "name": "Purab Sem",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 7941,
+    "typical_max_txn": 26611,
+    "account_age_days": 493
+  },
+  "USR_0006": {
+    "user_id": "USR_0006",
+    "name": "Jayesh Madan",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 7755,
+    "typical_max_txn": 37071,
+    "account_age_days": 1372
+  },
+  "USR_0007": {
+    "user_id": "USR_0007",
+    "name": "Anaya Dora",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 11832,
+    "typical_max_txn": 52868,
+    "account_age_days": 2360
+  },
+  "USR_0008": {
+    "user_id": "USR_0008",
+    "name": "Ishita Karpe",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 8408,
+    "typical_max_txn": 22547,
+    "account_age_days": 1635
+  },
+  "USR_0009": {
+    "user_id": "USR_0009",
+    "name": "Kiara Raju",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 1835,
+    "typical_max_txn": 4021,
+    "account_age_days": 2037
+  },
+  "USR_0010": {
+    "user_id": "USR_0010",
+    "name": "Faiyaz Luthra",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 12945,
+    "typical_max_txn": 50420,
+    "account_age_days": 3026
+  },
+  "USR_0011": {
+    "user_id": "USR_0011",
+    "name": "Aarush Gill",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 2895,
+    "typical_max_txn": 8869,
+    "account_age_days": 2774
+  },
+  "USR_0012": {
+    "user_id": "USR_0012",
+    "name": "Pranay Bassi",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 1484,
+    "typical_max_txn": 6944,
+    "account_age_days": 3543
+  },
+  "USR_0013": {
+    "user_id": "USR_0013",
+    "name": "Amira Wali",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 10329,
+    "typical_max_txn": 26689,
+    "account_age_days": 2847
+  },
+  "USR_0014": {
+    "user_id": "USR_0014",
+    "name": "Lavanya Lal",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 5776,
+    "typical_max_txn": 12311,
+    "account_age_days": 1719
+  },
+  "USR_0015": {
+    "user_id": "USR_0015",
+    "name": "Kiaan Sethi",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 8425,
+    "typical_max_txn": 34114,
+    "account_age_days": 588
+  },
+  "USR_0016": {
+    "user_id": "USR_0016",
+    "name": "Lakshay Bhatnagar",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 13876,
+    "typical_max_txn": 68027,
+    "account_age_days": 2726
+  },
+  "USR_0017": {
+    "user_id": "USR_0017",
+    "name": "Manjari Dubey",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 6457,
+    "typical_max_txn": 20090,
+    "account_age_days": 1209
+  },
+  "USR_0018": {
+    "user_id": "USR_0018",
+    "name": "Ryan Sibal",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 1606,
+    "typical_max_txn": 4124,
+    "account_age_days": 1729
+  },
+  "USR_0019": {
+    "user_id": "USR_0019",
+    "name": "Riaan Raj",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 7212,
+    "typical_max_txn": 24716,
+    "account_age_days": 500
+  },
+  "USR_0020": {
+    "user_id": "USR_0020",
+    "name": "Aniruddh Gokhale",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 5287,
+    "typical_max_txn": 21197,
+    "account_age_days": 851
+  },
+  "USR_0021": {
+    "user_id": "USR_0021",
+    "name": "Vritika Kant",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 14134,
+    "typical_max_txn": 63575,
+    "account_age_days": 1612
+  },
+  "USR_0022": {
+    "user_id": "USR_0022",
+    "name": "Reyansh Lanka",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 9631,
+    "typical_max_txn": 28287,
+    "account_age_days": 2564
+  },
+  "USR_0023": {
+    "user_id": "USR_0023",
+    "name": "Vidur Mani",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 11633,
+    "typical_max_txn": 51351,
+    "account_age_days": 3042
+  },
+  "USR_0024": {
+    "user_id": "USR_0024",
+    "name": "Zain Chad",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 12704,
+    "typical_max_txn": 36396,
+    "account_age_days": 1432
+  },
+  "USR_0025": {
+    "user_id": "USR_0025",
+    "name": "Shanaya Vohra",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 3973,
+    "typical_max_txn": 9611,
+    "account_age_days": 2500
+  },
+  "USR_0026": {
+    "user_id": "USR_0026",
+    "name": "Romil Kata",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 12574,
+    "typical_max_txn": 25425,
+    "account_age_days": 753
+  },
+  "USR_0027": {
+    "user_id": "USR_0027",
+    "name": "Aarush Deshmukh",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 12054,
+    "typical_max_txn": 48150,
+    "account_age_days": 2878
+  },
+  "USR_0028": {
+    "user_id": "USR_0028",
+    "name": "Vardaniya Mand",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 7337,
+    "typical_max_txn": 31858,
+    "account_age_days": 2582
+  },
+  "USR_0029": {
+    "user_id": "USR_0029",
+    "name": "Stuvan Chokshi",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 8556,
+    "typical_max_txn": 31710,
+    "account_age_days": 1691
+  },
+  "USR_0030": {
+    "user_id": "USR_0030",
+    "name": "Mohanlal Agate",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 1040,
+    "typical_max_txn": 2437,
+    "account_age_days": 536
+  },
+  "USR_0031": {
+    "user_id": "USR_0031",
+    "name": "Bhavin Mahajan",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 6874,
+    "typical_max_txn": 23462,
+    "account_age_days": 2449
+  },
+  "USR_0032": {
+    "user_id": "USR_0032",
+    "name": "Damini Basu",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 12898,
+    "typical_max_txn": 55396,
+    "account_age_days": 2076
+  },
+  "USR_0033": {
+    "user_id": "USR_0033",
+    "name": "Abram Wali",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 8831,
+    "typical_max_txn": 32327,
+    "account_age_days": 2327
+  },
+  "USR_0034": {
+    "user_id": "USR_0034",
+    "name": "Shamik Sane",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 1813,
+    "typical_max_txn": 5279,
+    "account_age_days": 2054
+  },
+  "USR_0035": {
+    "user_id": "USR_0035",
+    "name": "Sumer Ahluwalia",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 9241,
+    "typical_max_txn": 30589,
+    "account_age_days": 141
+  },
+  "USR_0036": {
+    "user_id": "USR_0036",
+    "name": "Ivana D\u2019Alia",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 14749,
+    "typical_max_txn": 47574,
+    "account_age_days": 806
+  },
+  "USR_0037": {
+    "user_id": "USR_0037",
+    "name": "Vivaan Khare",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 14893,
+    "typical_max_txn": 40238,
+    "account_age_days": 3119
+  },
+  "USR_0038": {
+    "user_id": "USR_0038",
+    "name": "Zara Yadav",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 12414,
+    "typical_max_txn": 35307,
+    "account_age_days": 241
+  },
+  "USR_0039": {
+    "user_id": "USR_0039",
+    "name": "Nayantara Swaminathan",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 13805,
+    "typical_max_txn": 55023,
+    "account_age_days": 1092
+  },
+  "USR_0040": {
+    "user_id": "USR_0040",
+    "name": "Damini Dhingra",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 2331,
+    "typical_max_txn": 10143,
+    "account_age_days": 2046
+  },
+  "USR_0041": {
+    "user_id": "USR_0041",
+    "name": "Vivaan Issac",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 14943,
+    "typical_max_txn": 48103,
+    "account_age_days": 2434
+  },
+  "USR_0042": {
+    "user_id": "USR_0042",
+    "name": "Aarav Issac",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 6560,
+    "typical_max_txn": 16406,
+    "account_age_days": 2976
+  },
+  "USR_0043": {
+    "user_id": "USR_0043",
+    "name": "Mehul Buch",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 5347,
+    "typical_max_txn": 12138,
+    "account_age_days": 112
+  },
+  "USR_0044": {
+    "user_id": "USR_0044",
+    "name": "Keya Gole",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 11687,
+    "typical_max_txn": 39567,
+    "account_age_days": 2644
+  },
+  "USR_0045": {
+    "user_id": "USR_0045",
+    "name": "Aarna Singh",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 10897,
+    "typical_max_txn": 38173,
+    "account_age_days": 613
+  },
+  "USR_0046": {
+    "user_id": "USR_0046",
+    "name": "Drishya Sahni",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 14101,
+    "typical_max_txn": 57658,
+    "account_age_days": 581
+  },
+  "USR_0047": {
+    "user_id": "USR_0047",
+    "name": "Drishya Kunda",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 7686,
+    "typical_max_txn": 24157,
+    "account_age_days": 1645
+  },
+  "USR_0048": {
+    "user_id": "USR_0048",
+    "name": "Akarsh Tandon",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 3962,
+    "typical_max_txn": 15415,
+    "account_age_days": 1121
+  },
+  "USR_0049": {
+    "user_id": "USR_0049",
+    "name": "Rohan Sundaram",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 9304,
+    "typical_max_txn": 21054,
+    "account_age_days": 1339
+  },
+  "USR_0050": {
+    "user_id": "USR_0050",
+    "name": "Jayant Dyal",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 5467,
+    "typical_max_txn": 26710,
+    "account_age_days": 457
+  },
+  "USR_0051": {
+    "user_id": "USR_0051",
+    "name": "Baiju Sharaf",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 5810,
+    "typical_max_txn": 23815,
+    "account_age_days": 3319
+  },
+  "USR_0052": {
+    "user_id": "USR_0052",
+    "name": "Ishaan Koshy",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 7132,
+    "typical_max_txn": 35000,
+    "account_age_days": 992
+  },
+  "USR_0053": {
+    "user_id": "USR_0053",
+    "name": "Nirvaan Keer",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 4321,
+    "typical_max_txn": 17935,
+    "account_age_days": 2849
+  },
+  "USR_0054": {
+    "user_id": "USR_0054",
+    "name": "Krish Yohannan",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 11940,
+    "typical_max_txn": 33631,
+    "account_age_days": 1656
+  },
+  "USR_0055": {
+    "user_id": "USR_0055",
+    "name": "Aarna Wable",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 1649,
+    "typical_max_txn": 7763,
+    "account_age_days": 378
+  },
+  "USR_0056": {
+    "user_id": "USR_0056",
+    "name": "Nitara Sinha",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 2349,
+    "typical_max_txn": 6124,
+    "account_age_days": 1679
+  },
+  "USR_0057": {
+    "user_id": "USR_0057",
+    "name": "Biju Manne",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 10963,
+    "typical_max_txn": 40975,
+    "account_age_days": 1137
+  },
+  "USR_0058": {
+    "user_id": "USR_0058",
+    "name": "Chirag Ramakrishnan",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 8430,
+    "typical_max_txn": 38523,
+    "account_age_days": 669
+  },
+  "USR_0059": {
+    "user_id": "USR_0059",
+    "name": "Nirvi Dora",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 783,
+    "typical_max_txn": 3256,
+    "account_age_days": 2775
+  },
+  "USR_0060": {
+    "user_id": "USR_0060",
+    "name": "Nayantara Buch",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 10117,
+    "typical_max_txn": 39273,
+    "account_age_days": 1594
+  },
+  "USR_0061": {
+    "user_id": "USR_0061",
+    "name": "Navya Khalsa",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 2533,
+    "typical_max_txn": 10004,
+    "account_age_days": 2144
+  },
+  "USR_0062": {
+    "user_id": "USR_0062",
+    "name": "Kiaan Chacko",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 9616,
+    "typical_max_txn": 31227,
+    "account_age_days": 335
+  },
+  "USR_0063": {
+    "user_id": "USR_0063",
+    "name": "Raghav Kant",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 11909,
+    "typical_max_txn": 41466,
+    "account_age_days": 180
+  },
+  "USR_0064": {
+    "user_id": "USR_0064",
+    "name": "Taimur Lad",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 3229,
+    "typical_max_txn": 7858,
+    "account_age_days": 1224
+  },
+  "USR_0065": {
+    "user_id": "USR_0065",
+    "name": "Madhup Sidhu",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 10326,
+    "typical_max_txn": 38856,
+    "account_age_days": 404
+  },
+  "USR_0066": {
+    "user_id": "USR_0066",
+    "name": "Diya Dugar",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 12005,
+    "typical_max_txn": 57328,
+    "account_age_days": 647
+  },
+  "USR_0067": {
+    "user_id": "USR_0067",
+    "name": "Eshani Devi",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 14850,
+    "typical_max_txn": 45153,
+    "account_age_days": 2133
+  },
+  "USR_0068": {
+    "user_id": "USR_0068",
+    "name": "Amani Ravel",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 9380,
+    "typical_max_txn": 19401,
+    "account_age_days": 2169
+  },
+  "USR_0069": {
+    "user_id": "USR_0069",
+    "name": "Ritvik Srinivas",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 2696,
+    "typical_max_txn": 9292,
+    "account_age_days": 3499
+  },
+  "USR_0070": {
+    "user_id": "USR_0070",
+    "name": "Kavya Subramanian",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 7273,
+    "typical_max_txn": 16351,
+    "account_age_days": 2863
+  },
+  "USR_0071": {
+    "user_id": "USR_0071",
+    "name": "Manikya Dutta",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 4499,
+    "typical_max_txn": 15621,
+    "account_age_days": 1791
+  },
+  "USR_0072": {
+    "user_id": "USR_0072",
+    "name": "Ishaan Setty",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 6896,
+    "typical_max_txn": 25619,
+    "account_age_days": 3424
+  },
+  "USR_0073": {
+    "user_id": "USR_0073",
+    "name": "Hunar Dhillon",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 8362,
+    "typical_max_txn": 23421,
+    "account_age_days": 1744
+  },
+  "USR_0074": {
+    "user_id": "USR_0074",
+    "name": "Kimaya Virk",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 14329,
+    "typical_max_txn": 51040,
+    "account_age_days": 1230
+  },
+  "USR_0075": {
+    "user_id": "USR_0075",
+    "name": "Bhavin Bora",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 12821,
+    "typical_max_txn": 26473,
+    "account_age_days": 1618
+  },
+  "USR_0076": {
+    "user_id": "USR_0076",
+    "name": "Himmat Bhatnagar",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 5773,
+    "typical_max_txn": 27066,
+    "account_age_days": 3021
+  },
+  "USR_0077": {
+    "user_id": "USR_0077",
+    "name": "Oorja Gola",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 8370,
+    "typical_max_txn": 30651,
+    "account_age_days": 537
+  },
+  "USR_0078": {
+    "user_id": "USR_0078",
+    "name": "Saanvi Kakar",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 5077,
+    "typical_max_txn": 20392,
+    "account_age_days": 423
+  },
+  "USR_0079": {
+    "user_id": "USR_0079",
+    "name": "Aarna Ganguly",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 2223,
+    "typical_max_txn": 8843,
+    "account_age_days": 1048
+  },
+  "USR_0080": {
+    "user_id": "USR_0080",
+    "name": "Faiyaz Chander",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 11089,
+    "typical_max_txn": 47748,
+    "account_age_days": 2661
+  },
+  "USR_0081": {
+    "user_id": "USR_0081",
+    "name": "Anika Wali",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 5149,
+    "typical_max_txn": 24447,
+    "account_age_days": 420
+  },
+  "USR_0082": {
+    "user_id": "USR_0082",
+    "name": "Keya Jha",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 14639,
+    "typical_max_txn": 30921,
+    "account_age_days": 863
+  },
+  "USR_0083": {
+    "user_id": "USR_0083",
+    "name": "Taran Lata",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 2548,
+    "typical_max_txn": 7931,
+    "account_age_days": 2038
+  },
+  "USR_0084": {
+    "user_id": "USR_0084",
+    "name": "Ishita Mandal",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 4994,
+    "typical_max_txn": 22097,
+    "account_age_days": 3033
+  },
+  "USR_0085": {
+    "user_id": "USR_0085",
+    "name": "Jayan Saraf",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 14466,
+    "typical_max_txn": 70285,
+    "account_age_days": 1178
+  },
+  "USR_0086": {
+    "user_id": "USR_0086",
+    "name": "Elakshi Trivedi",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 9705,
+    "typical_max_txn": 34405,
+    "account_age_days": 1083
+  },
+  "USR_0087": {
+    "user_id": "USR_0087",
+    "name": "Yakshit Iyer",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 13630,
+    "typical_max_txn": 65534,
+    "account_age_days": 956
+  },
+  "USR_0088": {
+    "user_id": "USR_0088",
+    "name": "Ira Chacko",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 3120,
+    "typical_max_txn": 6660,
+    "account_age_days": 625
+  },
+  "USR_0089": {
+    "user_id": "USR_0089",
+    "name": "Sahil Walla",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 4832,
+    "typical_max_txn": 24049,
+    "account_age_days": 1605
+  },
+  "USR_0090": {
+    "user_id": "USR_0090",
+    "name": "Aaryahi Tripathi",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 2697,
+    "typical_max_txn": 11450,
+    "account_age_days": 3257
+  },
+  "USR_0091": {
+    "user_id": "USR_0091",
+    "name": "Samarth Sankaran",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 12761,
+    "typical_max_txn": 59725,
+    "account_age_days": 3254
+  },
+  "USR_0092": {
+    "user_id": "USR_0092",
+    "name": "Kabir Venkataraman",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 2181,
+    "typical_max_txn": 6429,
+    "account_age_days": 1908
+  },
+  "USR_0093": {
+    "user_id": "USR_0093",
+    "name": "Rasha Choudhary",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 820,
+    "typical_max_txn": 3267,
+    "account_age_days": 2824
+  },
+  "USR_0094": {
+    "user_id": "USR_0094",
+    "name": "Chirag Kapur",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6448,
+    "typical_max_txn": 14723,
+    "account_age_days": 1382
+  },
+  "USR_0095": {
+    "user_id": "USR_0095",
+    "name": "Lakshay Tailor",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 11180,
+    "typical_max_txn": 31162,
+    "account_age_days": 2733
+  },
+  "USR_0096": {
+    "user_id": "USR_0096",
+    "name": "Kartik Balan",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 576,
+    "typical_max_txn": 1568,
+    "account_age_days": 3421
+  },
+  "USR_0097": {
+    "user_id": "USR_0097",
+    "name": "Renee Bahri",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 962,
+    "typical_max_txn": 4322,
+    "account_age_days": 474
+  },
+  "USR_0098": {
+    "user_id": "USR_0098",
+    "name": "Ahana  Sheth",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 13432,
+    "typical_max_txn": 34087,
+    "account_age_days": 584
+  },
+  "USR_0099": {
+    "user_id": "USR_0099",
+    "name": "Pari Shere",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 5824,
+    "typical_max_txn": 26928,
+    "account_age_days": 2199
+  },
+  "USR_0100": {
+    "user_id": "USR_0100",
+    "name": "Nehmat Lall",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 1149,
+    "typical_max_txn": 3367,
+    "account_age_days": 741
+  },
+  "USR_0101": {
+    "user_id": "USR_0101",
+    "name": "Samar Chander",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 14971,
+    "typical_max_txn": 73589,
+    "account_age_days": 2844
+  },
+  "USR_0102": {
+    "user_id": "USR_0102",
+    "name": "Hazel Vyas",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 7739,
+    "typical_max_txn": 18818,
+    "account_age_days": 1842
+  },
+  "USR_0103": {
+    "user_id": "USR_0103",
+    "name": "Arhaan Raval",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 14048,
+    "typical_max_txn": 37774,
+    "account_age_days": 80
+  },
+  "USR_0104": {
+    "user_id": "USR_0104",
+    "name": "Yuvraj  Dua",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 4549,
+    "typical_max_txn": 18346,
+    "account_age_days": 507
+  },
+  "USR_0105": {
+    "user_id": "USR_0105",
+    "name": "Bhamini Chaudhari",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 14554,
+    "typical_max_txn": 51215,
+    "account_age_days": 471
+  },
+  "USR_0106": {
+    "user_id": "USR_0106",
+    "name": "Raunak Karan",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 13948,
+    "typical_max_txn": 52212,
+    "account_age_days": 2543
+  },
+  "USR_0107": {
+    "user_id": "USR_0107",
+    "name": "Anahi Varghese",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 6547,
+    "typical_max_txn": 28887,
+    "account_age_days": 753
+  },
+  "USR_0108": {
+    "user_id": "USR_0108",
+    "name": "Badal Vora",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 863,
+    "typical_max_txn": 3639,
+    "account_age_days": 2619
+  },
+  "USR_0109": {
+    "user_id": "USR_0109",
+    "name": "Jivin Buch",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 12476,
+    "typical_max_txn": 29583,
+    "account_age_days": 504
+  },
+  "USR_0110": {
+    "user_id": "USR_0110",
+    "name": "Yasmin Arya",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 8725,
+    "typical_max_txn": 27856,
+    "account_age_days": 3387
+  },
+  "USR_0111": {
+    "user_id": "USR_0111",
+    "name": "Madhup Mander",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 14610,
+    "typical_max_txn": 50634,
+    "account_age_days": 1119
+  },
+  "USR_0112": {
+    "user_id": "USR_0112",
+    "name": "Ayesha Lanka",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 7871,
+    "typical_max_txn": 38307,
+    "account_age_days": 2429
+  },
+  "USR_0113": {
+    "user_id": "USR_0113",
+    "name": "Samarth Bose",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 8054,
+    "typical_max_txn": 38453,
+    "account_age_days": 1066
+  },
+  "USR_0114": {
+    "user_id": "USR_0114",
+    "name": "Umang Rajagopalan",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 7737,
+    "typical_max_txn": 28360,
+    "account_age_days": 119
+  },
+  "USR_0115": {
+    "user_id": "USR_0115",
+    "name": "Jayan Venkataraman",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 2649,
+    "typical_max_txn": 6139,
+    "account_age_days": 2324
+  },
+  "USR_0116": {
+    "user_id": "USR_0116",
+    "name": "Piya Dada",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 10988,
+    "typical_max_txn": 35791,
+    "account_age_days": 538
+  },
+  "USR_0117": {
+    "user_id": "USR_0117",
+    "name": "Ela Shankar",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 594,
+    "typical_max_txn": 2250,
+    "account_age_days": 3527
+  },
+  "USR_0118": {
+    "user_id": "USR_0118",
+    "name": "Shamik Tripathi",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 3131,
+    "typical_max_txn": 13817,
+    "account_age_days": 3407
+  },
+  "USR_0119": {
+    "user_id": "USR_0119",
+    "name": "Alia Sathe",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 6765,
+    "typical_max_txn": 29456,
+    "account_age_days": 1721
+  },
+  "USR_0120": {
+    "user_id": "USR_0120",
+    "name": "Tara Saha",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 12781,
+    "typical_max_txn": 29746,
+    "account_age_days": 94
+  },
+  "USR_0121": {
+    "user_id": "USR_0121",
+    "name": "Tara Brar",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 4675,
+    "typical_max_txn": 20525,
+    "account_age_days": 3032
+  },
+  "USR_0122": {
+    "user_id": "USR_0122",
+    "name": "Priyansh Dar",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 7213,
+    "typical_max_txn": 25911,
+    "account_age_days": 872
+  },
+  "USR_0123": {
+    "user_id": "USR_0123",
+    "name": "Ela Chada",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 11594,
+    "typical_max_txn": 53369,
+    "account_age_days": 2223
+  },
+  "USR_0124": {
+    "user_id": "USR_0124",
+    "name": "Nitya Sule",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 11423,
+    "typical_max_txn": 36984,
+    "account_age_days": 2213
+  },
+  "USR_0125": {
+    "user_id": "USR_0125",
+    "name": "Hunar Balakrishnan",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 2223,
+    "typical_max_txn": 7286,
+    "account_age_days": 1384
+  },
+  "USR_0126": {
+    "user_id": "USR_0126",
+    "name": "Manjari Vala",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 2149,
+    "typical_max_txn": 9890,
+    "account_age_days": 2389
+  },
+  "USR_0127": {
+    "user_id": "USR_0127",
+    "name": "Hansh Rao",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 4474,
+    "typical_max_txn": 12274,
+    "account_age_days": 1673
+  },
+  "USR_0128": {
+    "user_id": "USR_0128",
+    "name": "Mishti Sem",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 4396,
+    "typical_max_txn": 18630,
+    "account_age_days": 886
+  },
+  "USR_0129": {
+    "user_id": "USR_0129",
+    "name": "Himmat Mani",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 12692,
+    "typical_max_txn": 29392,
+    "account_age_days": 2985
+  },
+  "USR_0130": {
+    "user_id": "USR_0130",
+    "name": "Kavya Mannan",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 13283,
+    "typical_max_txn": 50253,
+    "account_age_days": 270
+  },
+  "USR_0131": {
+    "user_id": "USR_0131",
+    "name": "Neysa Butala",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 5688,
+    "typical_max_txn": 25448,
+    "account_age_days": 559
+  },
+  "USR_0132": {
+    "user_id": "USR_0132",
+    "name": "Reyansh Agrawal",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 5121,
+    "typical_max_txn": 12452,
+    "account_age_days": 1153
+  },
+  "USR_0133": {
+    "user_id": "USR_0133",
+    "name": "Ehsaan Raj",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 13771,
+    "typical_max_txn": 34380,
+    "account_age_days": 3363
+  },
+  "USR_0134": {
+    "user_id": "USR_0134",
+    "name": "Anaya Dass",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 2759,
+    "typical_max_txn": 6789,
+    "account_age_days": 1060
+  },
+  "USR_0135": {
+    "user_id": "USR_0135",
+    "name": "Tarini Mammen",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 7107,
+    "typical_max_txn": 14664,
+    "account_age_days": 448
+  },
+  "USR_0136": {
+    "user_id": "USR_0136",
+    "name": "Keya Gulati",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 10781,
+    "typical_max_txn": 27210,
+    "account_age_days": 230
+  },
+  "USR_0137": {
+    "user_id": "USR_0137",
+    "name": "Ivan Bedi",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 12549,
+    "typical_max_txn": 47352,
+    "account_age_days": 223
+  },
+  "USR_0138": {
+    "user_id": "USR_0138",
+    "name": "Anya Hayre",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 7981,
+    "typical_max_txn": 25386,
+    "account_age_days": 2494
+  },
+  "USR_0139": {
+    "user_id": "USR_0139",
+    "name": "Umang Sami",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 12509,
+    "typical_max_txn": 43951,
+    "account_age_days": 1181
+  },
+  "USR_0140": {
+    "user_id": "USR_0140",
+    "name": "Rasha Dayal",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 11172,
+    "typical_max_txn": 50870,
+    "account_age_days": 3197
+  },
+  "USR_0141": {
+    "user_id": "USR_0141",
+    "name": "Kaira Mandal",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 8279,
+    "typical_max_txn": 21065,
+    "account_age_days": 187
+  },
+  "USR_0142": {
+    "user_id": "USR_0142",
+    "name": "Nirvaan Banerjee",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 13392,
+    "typical_max_txn": 36803,
+    "account_age_days": 887
+  },
+  "USR_0143": {
+    "user_id": "USR_0143",
+    "name": "Devansh Dugar",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 9817,
+    "typical_max_txn": 31893,
+    "account_age_days": 2097
+  },
+  "USR_0144": {
+    "user_id": "USR_0144",
+    "name": "Ivana Keer",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 4593,
+    "typical_max_txn": 14334,
+    "account_age_days": 208
+  },
+  "USR_0145": {
+    "user_id": "USR_0145",
+    "name": "Mamooty Balasubramanian",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 13924,
+    "typical_max_txn": 32095,
+    "account_age_days": 1925
+  },
+  "USR_0146": {
+    "user_id": "USR_0146",
+    "name": "Advik Ahluwalia",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 1853,
+    "typical_max_txn": 3994,
+    "account_age_days": 3047
+  },
+  "USR_0147": {
+    "user_id": "USR_0147",
+    "name": "Vihaan Kala",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 6359,
+    "typical_max_txn": 14608,
+    "account_age_days": 3377
+  },
+  "USR_0148": {
+    "user_id": "USR_0148",
+    "name": "Nirvaan Jain",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 12638,
+    "typical_max_txn": 59499,
+    "account_age_days": 3083
+  },
+  "USR_0149": {
+    "user_id": "USR_0149",
+    "name": "Damini Din",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 3978,
+    "typical_max_txn": 17527,
+    "account_age_days": 3576
+  },
+  "USR_0150": {
+    "user_id": "USR_0150",
+    "name": "Tara Mahajan",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 8900,
+    "typical_max_txn": 34954,
+    "account_age_days": 2851
+  },
+  "USR_0151": {
+    "user_id": "USR_0151",
+    "name": "Ela Bose",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 9436,
+    "typical_max_txn": 22680,
+    "account_age_days": 2849
+  },
+  "USR_0152": {
+    "user_id": "USR_0152",
+    "name": "Nitara Andra",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 12477,
+    "typical_max_txn": 44201,
+    "account_age_days": 1970
+  },
+  "USR_0153": {
+    "user_id": "USR_0153",
+    "name": "Eshani Brar",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 14521,
+    "typical_max_txn": 49202,
+    "account_age_days": 3134
+  },
+  "USR_0154": {
+    "user_id": "USR_0154",
+    "name": "Vivaan Devi",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 11869,
+    "typical_max_txn": 46510,
+    "account_age_days": 1424
+  },
+  "USR_0155": {
+    "user_id": "USR_0155",
+    "name": "Zeeshan Ramaswamy",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 4122,
+    "typical_max_txn": 9972,
+    "account_age_days": 994
+  },
+  "USR_0156": {
+    "user_id": "USR_0156",
+    "name": "Nitya Suri",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6787,
+    "typical_max_txn": 22062,
+    "account_age_days": 1759
+  },
+  "USR_0157": {
+    "user_id": "USR_0157",
+    "name": "Nitya Madan",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 9260,
+    "typical_max_txn": 28729,
+    "account_age_days": 871
+  },
+  "USR_0158": {
+    "user_id": "USR_0158",
+    "name": "Shanaya Bajaj",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 7823,
+    "typical_max_txn": 23331,
+    "account_age_days": 1356
+  },
+  "USR_0159": {
+    "user_id": "USR_0159",
+    "name": "Ivan Chahal",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 6791,
+    "typical_max_txn": 27552,
+    "account_age_days": 1403
+  },
+  "USR_0160": {
+    "user_id": "USR_0160",
+    "name": "Renee Malhotra",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 3913,
+    "typical_max_txn": 18964,
+    "account_age_days": 1104
+  },
+  "USR_0161": {
+    "user_id": "USR_0161",
+    "name": "Mamooty Tandon",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 10227,
+    "typical_max_txn": 35208,
+    "account_age_days": 3347
+  },
+  "USR_0162": {
+    "user_id": "USR_0162",
+    "name": "Kaira Rout",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 11669,
+    "typical_max_txn": 42081,
+    "account_age_days": 1218
+  },
+  "USR_0163": {
+    "user_id": "USR_0163",
+    "name": "Vaibhav Dani",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 14427,
+    "typical_max_txn": 57098,
+    "account_age_days": 3101
+  },
+  "USR_0164": {
+    "user_id": "USR_0164",
+    "name": "Madhup Grover",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 3434,
+    "typical_max_txn": 12356,
+    "account_age_days": 2941
+  },
+  "USR_0165": {
+    "user_id": "USR_0165",
+    "name": "Chirag Bora",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 11611,
+    "typical_max_txn": 33259,
+    "account_age_days": 2321
+  },
+  "USR_0166": {
+    "user_id": "USR_0166",
+    "name": "Himmat Dash",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 3062,
+    "typical_max_txn": 7983,
+    "account_age_days": 2690
+  },
+  "USR_0167": {
+    "user_id": "USR_0167",
+    "name": "Indrajit Das",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 9162,
+    "typical_max_txn": 41981,
+    "account_age_days": 2545
+  },
+  "USR_0168": {
+    "user_id": "USR_0168",
+    "name": "Badal Saha",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 13824,
+    "typical_max_txn": 53127,
+    "account_age_days": 508
+  },
+  "USR_0169": {
+    "user_id": "USR_0169",
+    "name": "Nitya Gour",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 9725,
+    "typical_max_txn": 40622,
+    "account_age_days": 374
+  },
+  "USR_0170": {
+    "user_id": "USR_0170",
+    "name": "Shlok Kumar",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 8921,
+    "typical_max_txn": 42890,
+    "account_age_days": 335
+  },
+  "USR_0171": {
+    "user_id": "USR_0171",
+    "name": "Samar Sarkar",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 10989,
+    "typical_max_txn": 53589,
+    "account_age_days": 527
+  },
+  "USR_0172": {
+    "user_id": "USR_0172",
+    "name": "Yuvaan Raj",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 2956,
+    "typical_max_txn": 11176,
+    "account_age_days": 2929
+  },
+  "USR_0173": {
+    "user_id": "USR_0173",
+    "name": "Arhaan Acharya",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 6955,
+    "typical_max_txn": 30500,
+    "account_age_days": 2863
+  },
+  "USR_0174": {
+    "user_id": "USR_0174",
+    "name": "Rati Bir",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 14004,
+    "typical_max_txn": 38653,
+    "account_age_days": 3454
+  },
+  "USR_0175": {
+    "user_id": "USR_0175",
+    "name": "Pihu Doctor",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 10966,
+    "typical_max_txn": 25058,
+    "account_age_days": 2166
+  },
+  "USR_0176": {
+    "user_id": "USR_0176",
+    "name": "Mahika Chaudry",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 8047,
+    "typical_max_txn": 20229,
+    "account_age_days": 2260
+  },
+  "USR_0177": {
+    "user_id": "USR_0177",
+    "name": "Kanav Agarwal",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 2375,
+    "typical_max_txn": 8828,
+    "account_age_days": 2075
+  },
+  "USR_0178": {
+    "user_id": "USR_0178",
+    "name": "Anaya Sur",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 7400,
+    "typical_max_txn": 26402,
+    "account_age_days": 1716
+  },
+  "USR_0179": {
+    "user_id": "USR_0179",
+    "name": "Misha Sangha",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 11052,
+    "typical_max_txn": 48603,
+    "account_age_days": 2795
+  },
+  "USR_0180": {
+    "user_id": "USR_0180",
+    "name": "Ishita Raja",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 8006,
+    "typical_max_txn": 30413,
+    "account_age_days": 1811
+  },
+  "USR_0181": {
+    "user_id": "USR_0181",
+    "name": "Emir Kaul",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 2517,
+    "typical_max_txn": 5938,
+    "account_age_days": 3401
+  },
+  "USR_0182": {
+    "user_id": "USR_0182",
+    "name": "Yashvi Chauhan",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 11896,
+    "typical_max_txn": 26922,
+    "account_age_days": 453
+  },
+  "USR_0183": {
+    "user_id": "USR_0183",
+    "name": "Sana Sathe",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 7578,
+    "typical_max_txn": 24672,
+    "account_age_days": 2411
+  },
+  "USR_0184": {
+    "user_id": "USR_0184",
+    "name": "Aarush Bumb",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 13863,
+    "typical_max_txn": 55641,
+    "account_age_days": 2833
+  },
+  "USR_0185": {
+    "user_id": "USR_0185",
+    "name": "Onkar Bakshi",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 11092,
+    "typical_max_txn": 52078,
+    "account_age_days": 1237
+  },
+  "USR_0186": {
+    "user_id": "USR_0186",
+    "name": "Anika Dugar",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 12348,
+    "typical_max_txn": 34717,
+    "account_age_days": 2790
+  },
+  "USR_0187": {
+    "user_id": "USR_0187",
+    "name": "Ishita Korpal",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 12030,
+    "typical_max_txn": 35408,
+    "account_age_days": 1348
+  },
+  "USR_0188": {
+    "user_id": "USR_0188",
+    "name": "Madhav Sane",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 5038,
+    "typical_max_txn": 12309,
+    "account_age_days": 600
+  },
+  "USR_0189": {
+    "user_id": "USR_0189",
+    "name": "Faiyaz Bains",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 1750,
+    "typical_max_txn": 5798,
+    "account_age_days": 3418
+  },
+  "USR_0190": {
+    "user_id": "USR_0190",
+    "name": "Charvi Gokhale",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 11193,
+    "typical_max_txn": 46888,
+    "account_age_days": 1417
+  },
+  "USR_0191": {
+    "user_id": "USR_0191",
+    "name": "Suhana Chauhan",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 3051,
+    "typical_max_txn": 14670,
+    "account_age_days": 2031
+  },
+  "USR_0192": {
+    "user_id": "USR_0192",
+    "name": "Divyansh Sarkar",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 5731,
+    "typical_max_txn": 19703,
+    "account_age_days": 2854
+  },
+  "USR_0193": {
+    "user_id": "USR_0193",
+    "name": "Kashvi Bhargava",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 2528,
+    "typical_max_txn": 12538,
+    "account_age_days": 1392
+  },
+  "USR_0194": {
+    "user_id": "USR_0194",
+    "name": "Nitara Kibe",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 570,
+    "typical_max_txn": 2766,
+    "account_age_days": 2628
+  },
+  "USR_0195": {
+    "user_id": "USR_0195",
+    "name": "Rati Karan",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 6645,
+    "typical_max_txn": 30245,
+    "account_age_days": 458
+  },
+  "USR_0196": {
+    "user_id": "USR_0196",
+    "name": "Nishith Mangal",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 13230,
+    "typical_max_txn": 31299,
+    "account_age_days": 2336
+  },
+  "USR_0197": {
+    "user_id": "USR_0197",
+    "name": "Tejas Kohli",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 7433,
+    "typical_max_txn": 30165,
+    "account_age_days": 2159
+  },
+  "USR_0198": {
+    "user_id": "USR_0198",
+    "name": "Alia Bora",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 8395,
+    "typical_max_txn": 28231,
+    "account_age_days": 74
+  },
+  "USR_0199": {
+    "user_id": "USR_0199",
+    "name": "Prisha Das",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 10977,
+    "typical_max_txn": 31680,
+    "account_age_days": 3017
+  },
+  "USR_0200": {
+    "user_id": "USR_0200",
+    "name": "Rohan Choudhury",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 14540,
+    "typical_max_txn": 48373,
+    "account_age_days": 1689
+  },
+  "USR_0201": {
+    "user_id": "USR_0201",
+    "name": "Shlok Subramanian",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 675,
+    "typical_max_txn": 3209,
+    "account_age_days": 1122
+  },
+  "USR_0202": {
+    "user_id": "USR_0202",
+    "name": "Kiara Bose",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 11204,
+    "typical_max_txn": 26125,
+    "account_age_days": 2858
+  },
+  "USR_0203": {
+    "user_id": "USR_0203",
+    "name": "Nirvaan Ben",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 6168,
+    "typical_max_txn": 28604,
+    "account_age_days": 3639
+  },
+  "USR_0204": {
+    "user_id": "USR_0204",
+    "name": "Raunak Dass",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 10425,
+    "typical_max_txn": 47023,
+    "account_age_days": 1057
+  },
+  "USR_0205": {
+    "user_id": "USR_0205",
+    "name": "Jayesh Bhagat",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 1126,
+    "typical_max_txn": 5626,
+    "account_age_days": 415
+  },
+  "USR_0206": {
+    "user_id": "USR_0206",
+    "name": "Mohanlal Sanghvi",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 847,
+    "typical_max_txn": 3345,
+    "account_age_days": 2439
+  },
+  "USR_0207": {
+    "user_id": "USR_0207",
+    "name": "Mahika Singhal",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 9538,
+    "typical_max_txn": 44743,
+    "account_age_days": 357
+  },
+  "USR_0208": {
+    "user_id": "USR_0208",
+    "name": "Zoya Hans",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 13019,
+    "typical_max_txn": 35444,
+    "account_age_days": 134
+  },
+  "USR_0209": {
+    "user_id": "USR_0209",
+    "name": "Anahita Vyas",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 7072,
+    "typical_max_txn": 30623,
+    "account_age_days": 547
+  },
+  "USR_0210": {
+    "user_id": "USR_0210",
+    "name": "Ritvik Samra",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 12221,
+    "typical_max_txn": 57828,
+    "account_age_days": 747
+  },
+  "USR_0211": {
+    "user_id": "USR_0211",
+    "name": "Gatik Aurora",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 4689,
+    "typical_max_txn": 9886,
+    "account_age_days": 2405
+  },
+  "USR_0212": {
+    "user_id": "USR_0212",
+    "name": "Kanav Varma",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 579,
+    "typical_max_txn": 1247,
+    "account_age_days": 49
+  },
+  "USR_0213": {
+    "user_id": "USR_0213",
+    "name": "Tarini Deshpande",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 12389,
+    "typical_max_txn": 54566,
+    "account_age_days": 2223
+  },
+  "USR_0214": {
+    "user_id": "USR_0214",
+    "name": "Lavanya Bail",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 14466,
+    "typical_max_txn": 65794,
+    "account_age_days": 893
+  },
+  "USR_0215": {
+    "user_id": "USR_0215",
+    "name": "Saksham Uppal",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 4050,
+    "typical_max_txn": 17831,
+    "account_age_days": 237
+  },
+  "USR_0216": {
+    "user_id": "USR_0216",
+    "name": "Vivaan Lad",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 14538,
+    "typical_max_txn": 62750,
+    "account_age_days": 3388
+  },
+  "USR_0217": {
+    "user_id": "USR_0217",
+    "name": "Zara Ramesh",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 12768,
+    "typical_max_txn": 57633,
+    "account_age_days": 2557
+  },
+  "USR_0218": {
+    "user_id": "USR_0218",
+    "name": "Baiju Chopra",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 6974,
+    "typical_max_txn": 18169,
+    "account_age_days": 175
+  },
+  "USR_0219": {
+    "user_id": "USR_0219",
+    "name": "Nakul Thakur",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 2149,
+    "typical_max_txn": 7550,
+    "account_age_days": 482
+  },
+  "USR_0220": {
+    "user_id": "USR_0220",
+    "name": "Taran Loyal",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 8327,
+    "typical_max_txn": 32392,
+    "account_age_days": 2727
+  },
+  "USR_0221": {
+    "user_id": "USR_0221",
+    "name": "Aaina Gera",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 1747,
+    "typical_max_txn": 4307,
+    "account_age_days": 3111
+  },
+  "USR_0222": {
+    "user_id": "USR_0222",
+    "name": "Ryan Dhawan",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 12293,
+    "typical_max_txn": 31705,
+    "account_age_days": 2689
+  },
+  "USR_0223": {
+    "user_id": "USR_0223",
+    "name": "Madhup Dubey",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 728,
+    "typical_max_txn": 3006,
+    "account_age_days": 1010
+  },
+  "USR_0224": {
+    "user_id": "USR_0224",
+    "name": "Aniruddh Deol",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 8077,
+    "typical_max_txn": 30972,
+    "account_age_days": 3578
+  },
+  "USR_0225": {
+    "user_id": "USR_0225",
+    "name": "Stuvan Majumdar",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 7885,
+    "typical_max_txn": 30348,
+    "account_age_days": 227
+  },
+  "USR_0226": {
+    "user_id": "USR_0226",
+    "name": "Anvi Rastogi",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 563,
+    "typical_max_txn": 2619,
+    "account_age_days": 183
+  },
+  "USR_0227": {
+    "user_id": "USR_0227",
+    "name": "Samar Vora",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 7154,
+    "typical_max_txn": 18023,
+    "account_age_days": 2598
+  },
+  "USR_0228": {
+    "user_id": "USR_0228",
+    "name": "Aniruddh Rege",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 5881,
+    "typical_max_txn": 15000,
+    "account_age_days": 362
+  },
+  "USR_0229": {
+    "user_id": "USR_0229",
+    "name": "Vedika Sabharwal",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 5957,
+    "typical_max_txn": 20108,
+    "account_age_days": 3577
+  },
+  "USR_0230": {
+    "user_id": "USR_0230",
+    "name": "Ivan Tiwari",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 8373,
+    "typical_max_txn": 32731,
+    "account_age_days": 2868
+  },
+  "USR_0231": {
+    "user_id": "USR_0231",
+    "name": "Manikya Borra",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 13154,
+    "typical_max_txn": 32035,
+    "account_age_days": 2102
+  },
+  "USR_0232": {
+    "user_id": "USR_0232",
+    "name": "Madhup Walia",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 4100,
+    "typical_max_txn": 11906,
+    "account_age_days": 3454
+  },
+  "USR_0233": {
+    "user_id": "USR_0233",
+    "name": "Emir Gour",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 6566,
+    "typical_max_txn": 26916,
+    "account_age_days": 2122
+  },
+  "USR_0234": {
+    "user_id": "USR_0234",
+    "name": "Ayesha Randhawa",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 4233,
+    "typical_max_txn": 20410,
+    "account_age_days": 2380
+  },
+  "USR_0235": {
+    "user_id": "USR_0235",
+    "name": "Divij Basak",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 2789,
+    "typical_max_txn": 9831,
+    "account_age_days": 567
+  },
+  "USR_0236": {
+    "user_id": "USR_0236",
+    "name": "Raghav Ramesh",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 10517,
+    "typical_max_txn": 35994,
+    "account_age_days": 1492
+  },
+  "USR_0237": {
+    "user_id": "USR_0237",
+    "name": "Inaaya  Seth",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 2375,
+    "typical_max_txn": 5705,
+    "account_age_days": 461
+  },
+  "USR_0238": {
+    "user_id": "USR_0238",
+    "name": "Seher Golla",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 14243,
+    "typical_max_txn": 41505,
+    "account_age_days": 1036
+  },
+  "USR_0239": {
+    "user_id": "USR_0239",
+    "name": "Abram Issac",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 9413,
+    "typical_max_txn": 36079,
+    "account_age_days": 1579
+  },
+  "USR_0240": {
+    "user_id": "USR_0240",
+    "name": "Ishaan Dutta",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 6311,
+    "typical_max_txn": 20418,
+    "account_age_days": 2327
+  },
+  "USR_0241": {
+    "user_id": "USR_0241",
+    "name": "Manjari Brahmbhatt",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 2724,
+    "typical_max_txn": 7226,
+    "account_age_days": 1509
+  },
+  "USR_0242": {
+    "user_id": "USR_0242",
+    "name": "Samaira Sahni",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 14262,
+    "typical_max_txn": 42088,
+    "account_age_days": 2159
+  },
+  "USR_0243": {
+    "user_id": "USR_0243",
+    "name": "Anvi Varkey",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 13846,
+    "typical_max_txn": 45071,
+    "account_age_days": 160
+  },
+  "USR_0244": {
+    "user_id": "USR_0244",
+    "name": "Indrans Raju",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 7420,
+    "typical_max_txn": 19861,
+    "account_age_days": 1746
+  },
+  "USR_0245": {
+    "user_id": "USR_0245",
+    "name": "Dharmajan Khare",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 1881,
+    "typical_max_txn": 6954,
+    "account_age_days": 2102
+  },
+  "USR_0246": {
+    "user_id": "USR_0246",
+    "name": "Indranil Kala",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 9050,
+    "typical_max_txn": 35691,
+    "account_age_days": 2571
+  },
+  "USR_0247": {
+    "user_id": "USR_0247",
+    "name": "Tarini Bala",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 9013,
+    "typical_max_txn": 26576,
+    "account_age_days": 2391
+  },
+  "USR_0248": {
+    "user_id": "USR_0248",
+    "name": "Ojas Handa",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 4071,
+    "typical_max_txn": 14848,
+    "account_age_days": 2880
+  },
+  "USR_0249": {
+    "user_id": "USR_0249",
+    "name": "Miraan Sodhi",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 3356,
+    "typical_max_txn": 13014,
+    "account_age_days": 1591
+  },
+  "USR_0250": {
+    "user_id": "USR_0250",
+    "name": "Ojas Deshmukh",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 8132,
+    "typical_max_txn": 28772,
+    "account_age_days": 1335
+  },
+  "USR_0251": {
+    "user_id": "USR_0251",
+    "name": "Tiya Kohli",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 12220,
+    "typical_max_txn": 56935,
+    "account_age_days": 2696
+  },
+  "USR_0252": {
+    "user_id": "USR_0252",
+    "name": "Eshani Seth",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 2359,
+    "typical_max_txn": 8282,
+    "account_age_days": 3364
+  },
+  "USR_0253": {
+    "user_id": "USR_0253",
+    "name": "Taimur Goda",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 11134,
+    "typical_max_txn": 48985,
+    "account_age_days": 1913
+  },
+  "USR_0254": {
+    "user_id": "USR_0254",
+    "name": "Hridaan Bumb",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 4065,
+    "typical_max_txn": 18341,
+    "account_age_days": 1168
+  },
+  "USR_0255": {
+    "user_id": "USR_0255",
+    "name": "Romil Devi",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6066,
+    "typical_max_txn": 14240,
+    "account_age_days": 1818
+  },
+  "USR_0256": {
+    "user_id": "USR_0256",
+    "name": "Ranbir Bhatti",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 1311,
+    "typical_max_txn": 5933,
+    "account_age_days": 290
+  },
+  "USR_0257": {
+    "user_id": "USR_0257",
+    "name": "Bhavin Sura",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 12417,
+    "typical_max_txn": 35287,
+    "account_age_days": 231
+  },
+  "USR_0258": {
+    "user_id": "USR_0258",
+    "name": "Kimaya Vig",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 8696,
+    "typical_max_txn": 21905,
+    "account_age_days": 1239
+  },
+  "USR_0259": {
+    "user_id": "USR_0259",
+    "name": "Nakul Buch",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 11096,
+    "typical_max_txn": 46914,
+    "account_age_days": 1166
+  },
+  "USR_0260": {
+    "user_id": "USR_0260",
+    "name": "Parinaaz Singh",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 13590,
+    "typical_max_txn": 60903,
+    "account_age_days": 83
+  },
+  "USR_0261": {
+    "user_id": "USR_0261",
+    "name": "Devansh Raval",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 10739,
+    "typical_max_txn": 33471,
+    "account_age_days": 3130
+  },
+  "USR_0262": {
+    "user_id": "USR_0262",
+    "name": "Tanya Bhatia",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 10783,
+    "typical_max_txn": 41002,
+    "account_age_days": 586
+  },
+  "USR_0263": {
+    "user_id": "USR_0263",
+    "name": "Nirvi Srivastava",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 10192,
+    "typical_max_txn": 31541,
+    "account_age_days": 463
+  },
+  "USR_0264": {
+    "user_id": "USR_0264",
+    "name": "Kimaya Borah",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 7775,
+    "typical_max_txn": 38769,
+    "account_age_days": 3499
+  },
+  "USR_0265": {
+    "user_id": "USR_0265",
+    "name": "Dhanuk Sodhi",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 7018,
+    "typical_max_txn": 20582,
+    "account_age_days": 2825
+  },
+  "USR_0266": {
+    "user_id": "USR_0266",
+    "name": "Nitya Ram",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 11673,
+    "typical_max_txn": 48048,
+    "account_age_days": 2519
+  },
+  "USR_0267": {
+    "user_id": "USR_0267",
+    "name": "Urvi Bawa",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 11419,
+    "typical_max_txn": 44792,
+    "account_age_days": 1433
+  },
+  "USR_0268": {
+    "user_id": "USR_0268",
+    "name": "Nakul Aurora",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 5337,
+    "typical_max_txn": 14021,
+    "account_age_days": 68
+  },
+  "USR_0269": {
+    "user_id": "USR_0269",
+    "name": "Dharmajan Gole",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 11469,
+    "typical_max_txn": 28572,
+    "account_age_days": 1930
+  },
+  "USR_0270": {
+    "user_id": "USR_0270",
+    "name": "Priyansh Comar",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 10816,
+    "typical_max_txn": 48768,
+    "account_age_days": 630
+  },
+  "USR_0271": {
+    "user_id": "USR_0271",
+    "name": "Prisha Salvi",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 13845,
+    "typical_max_txn": 50782,
+    "account_age_days": 3610
+  },
+  "USR_0272": {
+    "user_id": "USR_0272",
+    "name": "Advika Samra",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 3406,
+    "typical_max_txn": 16931,
+    "account_age_days": 3067
+  },
+  "USR_0273": {
+    "user_id": "USR_0273",
+    "name": "Pranay Sen",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 9938,
+    "typical_max_txn": 33239,
+    "account_age_days": 542
+  },
+  "USR_0274": {
+    "user_id": "USR_0274",
+    "name": "Abram Roy",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 12722,
+    "typical_max_txn": 28499,
+    "account_age_days": 1451
+  },
+  "USR_0275": {
+    "user_id": "USR_0275",
+    "name": "Vivaan Rastogi",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 12614,
+    "typical_max_txn": 41643,
+    "account_age_days": 2764
+  },
+  "USR_0276": {
+    "user_id": "USR_0276",
+    "name": "Vaibhav Khatri",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 7455,
+    "typical_max_txn": 18279,
+    "account_age_days": 1728
+  },
+  "USR_0277": {
+    "user_id": "USR_0277",
+    "name": "Elakshi Rau",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 4941,
+    "typical_max_txn": 23327,
+    "account_age_days": 684
+  },
+  "USR_0278": {
+    "user_id": "USR_0278",
+    "name": "Charvi Batta",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 14140,
+    "typical_max_txn": 38157,
+    "account_age_days": 191
+  },
+  "USR_0279": {
+    "user_id": "USR_0279",
+    "name": "Hridaan Arora",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 3292,
+    "typical_max_txn": 11425,
+    "account_age_days": 1087
+  },
+  "USR_0280": {
+    "user_id": "USR_0280",
+    "name": "Ranbir Chahal",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 14936,
+    "typical_max_txn": 51975,
+    "account_age_days": 2152
+  },
+  "USR_0281": {
+    "user_id": "USR_0281",
+    "name": "Stuvan Barman",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 701,
+    "typical_max_txn": 1914,
+    "account_age_days": 334
+  },
+  "USR_0282": {
+    "user_id": "USR_0282",
+    "name": "Jayant Thaker",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 12688,
+    "typical_max_txn": 49645,
+    "account_age_days": 3083
+  },
+  "USR_0283": {
+    "user_id": "USR_0283",
+    "name": "Hunar Varghese",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 8564,
+    "typical_max_txn": 34346,
+    "account_age_days": 2379
+  },
+  "USR_0284": {
+    "user_id": "USR_0284",
+    "name": "Rati Kara",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 12019,
+    "typical_max_txn": 26133,
+    "account_age_days": 2791
+  },
+  "USR_0285": {
+    "user_id": "USR_0285",
+    "name": "Ojas Atwal",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 11011,
+    "typical_max_txn": 39844,
+    "account_age_days": 1357
+  },
+  "USR_0286": {
+    "user_id": "USR_0286",
+    "name": "Kiaan Bose",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 13277,
+    "typical_max_txn": 60190,
+    "account_age_days": 1255
+  },
+  "USR_0287": {
+    "user_id": "USR_0287",
+    "name": "Yuvraj  Ray",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 5301,
+    "typical_max_txn": 22825,
+    "account_age_days": 1776
+  },
+  "USR_0288": {
+    "user_id": "USR_0288",
+    "name": "Yakshit Hayre",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 10492,
+    "typical_max_txn": 36872,
+    "account_age_days": 3114
+  },
+  "USR_0289": {
+    "user_id": "USR_0289",
+    "name": "Indrajit Kadakia",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 6747,
+    "typical_max_txn": 25377,
+    "account_age_days": 3322
+  },
+  "USR_0290": {
+    "user_id": "USR_0290",
+    "name": "Kanav Sabharwal",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 2242,
+    "typical_max_txn": 6774,
+    "account_age_days": 3107
+  },
+  "USR_0291": {
+    "user_id": "USR_0291",
+    "name": "Mamooty Chana",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 8952,
+    "typical_max_txn": 32175,
+    "account_age_days": 1835
+  },
+  "USR_0292": {
+    "user_id": "USR_0292",
+    "name": "Seher Keer",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 7996,
+    "typical_max_txn": 25552,
+    "account_age_days": 410
+  },
+  "USR_0293": {
+    "user_id": "USR_0293",
+    "name": "Akarsh Goswami",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 14973,
+    "typical_max_txn": 58282,
+    "account_age_days": 3350
+  },
+  "USR_0294": {
+    "user_id": "USR_0294",
+    "name": "Navya Chaudry",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 6176,
+    "typical_max_txn": 18630,
+    "account_age_days": 672
+  },
+  "USR_0295": {
+    "user_id": "USR_0295",
+    "name": "Tarini Sandal",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 5088,
+    "typical_max_txn": 10554,
+    "account_age_days": 723
+  },
+  "USR_0296": {
+    "user_id": "USR_0296",
+    "name": "Mishti Lalla",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 9315,
+    "typical_max_txn": 31155,
+    "account_age_days": 3387
+  },
+  "USR_0297": {
+    "user_id": "USR_0297",
+    "name": "Raunak Khanna",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 6593,
+    "typical_max_txn": 25023,
+    "account_age_days": 1143
+  },
+  "USR_0298": {
+    "user_id": "USR_0298",
+    "name": "Misha Chaudhary",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 8714,
+    "typical_max_txn": 24696,
+    "account_age_days": 56
+  },
+  "USR_0299": {
+    "user_id": "USR_0299",
+    "name": "Aniruddh Kala",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 2969,
+    "typical_max_txn": 11582,
+    "account_age_days": 2574
+  },
+  "USR_0300": {
+    "user_id": "USR_0300",
+    "name": "Purab Dixit",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 10845,
+    "typical_max_txn": 41873,
+    "account_age_days": 3584
+  },
+  "USR_0301": {
+    "user_id": "USR_0301",
+    "name": "Gatik Sha",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 13245,
+    "typical_max_txn": 56745,
+    "account_age_days": 1758
+  },
+  "USR_0302": {
+    "user_id": "USR_0302",
+    "name": "Damini Ahuja",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 9937,
+    "typical_max_txn": 41358,
+    "account_age_days": 3300
+  },
+  "USR_0303": {
+    "user_id": "USR_0303",
+    "name": "Aarush Sarkar",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 4628,
+    "typical_max_txn": 20113,
+    "account_age_days": 3516
+  },
+  "USR_0304": {
+    "user_id": "USR_0304",
+    "name": "Hunar Gole",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 7180,
+    "typical_max_txn": 16817,
+    "account_age_days": 3167
+  },
+  "USR_0305": {
+    "user_id": "USR_0305",
+    "name": "Lavanya Sagar",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 7853,
+    "typical_max_txn": 26074,
+    "account_age_days": 2681
+  },
+  "USR_0306": {
+    "user_id": "USR_0306",
+    "name": "Samar Chand",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 9920,
+    "typical_max_txn": 39306,
+    "account_age_days": 2032
+  },
+  "USR_0307": {
+    "user_id": "USR_0307",
+    "name": "Adira Mall",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6544,
+    "typical_max_txn": 32417,
+    "account_age_days": 3540
+  },
+  "USR_0308": {
+    "user_id": "USR_0308",
+    "name": "Bhavin Subramanian",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 2733,
+    "typical_max_txn": 11482,
+    "account_age_days": 1073
+  },
+  "USR_0309": {
+    "user_id": "USR_0309",
+    "name": "Kashvi Sabharwal",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 14570,
+    "typical_max_txn": 44285,
+    "account_age_days": 2744
+  },
+  "USR_0310": {
+    "user_id": "USR_0310",
+    "name": "Himmat Grewal",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 568,
+    "typical_max_txn": 1205,
+    "account_age_days": 478
+  },
+  "USR_0311": {
+    "user_id": "USR_0311",
+    "name": "Rhea Saini",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 7868,
+    "typical_max_txn": 27294,
+    "account_age_days": 2843
+  },
+  "USR_0312": {
+    "user_id": "USR_0312",
+    "name": "Gokul Soni",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 13187,
+    "typical_max_txn": 44768,
+    "account_age_days": 3597
+  },
+  "USR_0313": {
+    "user_id": "USR_0313",
+    "name": "Vedika Kalita",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 5216,
+    "typical_max_txn": 16872,
+    "account_age_days": 3570
+  },
+  "USR_0314": {
+    "user_id": "USR_0314",
+    "name": "Mohanlal Vora",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 1573,
+    "typical_max_txn": 3546,
+    "account_age_days": 2903
+  },
+  "USR_0315": {
+    "user_id": "USR_0315",
+    "name": "Anay Bakshi",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 3717,
+    "typical_max_txn": 16377,
+    "account_age_days": 2040
+  },
+  "USR_0316": {
+    "user_id": "USR_0316",
+    "name": "Rohan Hans",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 4358,
+    "typical_max_txn": 19470,
+    "account_age_days": 3377
+  },
+  "USR_0317": {
+    "user_id": "USR_0317",
+    "name": "Ahana  Cheema",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 3956,
+    "typical_max_txn": 12335,
+    "account_age_days": 163
+  },
+  "USR_0318": {
+    "user_id": "USR_0318",
+    "name": "Raghav Solanki",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 14320,
+    "typical_max_txn": 33334,
+    "account_age_days": 206
+  },
+  "USR_0319": {
+    "user_id": "USR_0319",
+    "name": "Onkar Bandi",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 14007,
+    "typical_max_txn": 57985,
+    "account_age_days": 2474
+  },
+  "USR_0320": {
+    "user_id": "USR_0320",
+    "name": "Yuvraj  Sawhney",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 10026,
+    "typical_max_txn": 46083,
+    "account_age_days": 2830
+  },
+  "USR_0321": {
+    "user_id": "USR_0321",
+    "name": "Tushar Mangal",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 11228,
+    "typical_max_txn": 49432,
+    "account_age_days": 2706
+  },
+  "USR_0322": {
+    "user_id": "USR_0322",
+    "name": "Siya Toor",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 6036,
+    "typical_max_txn": 16318,
+    "account_age_days": 207
+  },
+  "USR_0323": {
+    "user_id": "USR_0323",
+    "name": "Tanya Contractor",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 1977,
+    "typical_max_txn": 9043,
+    "account_age_days": 2281
+  },
+  "USR_0324": {
+    "user_id": "USR_0324",
+    "name": "Jivin Manne",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 6934,
+    "typical_max_txn": 24573,
+    "account_age_days": 46
+  },
+  "USR_0325": {
+    "user_id": "USR_0325",
+    "name": "Romil Raja",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 4313,
+    "typical_max_txn": 9009,
+    "account_age_days": 2481
+  },
+  "USR_0326": {
+    "user_id": "USR_0326",
+    "name": "Jayan Bakshi",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 11514,
+    "typical_max_txn": 53965,
+    "account_age_days": 1482
+  },
+  "USR_0327": {
+    "user_id": "USR_0327",
+    "name": "Umang Cheema",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 9353,
+    "typical_max_txn": 25374,
+    "account_age_days": 2461
+  },
+  "USR_0328": {
+    "user_id": "USR_0328",
+    "name": "Seher Rama",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6517,
+    "typical_max_txn": 19838,
+    "account_age_days": 3117
+  },
+  "USR_0329": {
+    "user_id": "USR_0329",
+    "name": "Elakshi Garde",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 11804,
+    "typical_max_txn": 34194,
+    "account_age_days": 3119
+  },
+  "USR_0330": {
+    "user_id": "USR_0330",
+    "name": "Hiran Kota",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 10789,
+    "typical_max_txn": 34425,
+    "account_age_days": 2166
+  },
+  "USR_0331": {
+    "user_id": "USR_0331",
+    "name": "Kaira Tandon",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 2161,
+    "typical_max_txn": 10069,
+    "account_age_days": 1024
+  },
+  "USR_0332": {
+    "user_id": "USR_0332",
+    "name": "Shalv Salvi",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 13061,
+    "typical_max_txn": 29445,
+    "account_age_days": 709
+  },
+  "USR_0333": {
+    "user_id": "USR_0333",
+    "name": "Nayantara Chatterjee",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 10287,
+    "typical_max_txn": 42721,
+    "account_age_days": 1267
+  },
+  "USR_0334": {
+    "user_id": "USR_0334",
+    "name": "Anahi Mangal",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 6660,
+    "typical_max_txn": 33274,
+    "account_age_days": 2952
+  },
+  "USR_0335": {
+    "user_id": "USR_0335",
+    "name": "Alisha Subramaniam",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 9754,
+    "typical_max_txn": 31445,
+    "account_age_days": 1102
+  },
+  "USR_0336": {
+    "user_id": "USR_0336",
+    "name": "Raghav Chaudhuri",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 8245,
+    "typical_max_txn": 30709,
+    "account_age_days": 525
+  },
+  "USR_0337": {
+    "user_id": "USR_0337",
+    "name": "Inaaya  Majumdar",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 3207,
+    "typical_max_txn": 13157,
+    "account_age_days": 3641
+  },
+  "USR_0338": {
+    "user_id": "USR_0338",
+    "name": "Parinaaz Agarwal",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 11153,
+    "typical_max_txn": 35434,
+    "account_age_days": 2184
+  },
+  "USR_0339": {
+    "user_id": "USR_0339",
+    "name": "Mishti Virk",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 7689,
+    "typical_max_txn": 26840,
+    "account_age_days": 3343
+  },
+  "USR_0340": {
+    "user_id": "USR_0340",
+    "name": "Anay Gera",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 5488,
+    "typical_max_txn": 16991,
+    "account_age_days": 516
+  },
+  "USR_0341": {
+    "user_id": "USR_0341",
+    "name": "Dhruv Deshmukh",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 1695,
+    "typical_max_txn": 4417,
+    "account_age_days": 273
+  },
+  "USR_0342": {
+    "user_id": "USR_0342",
+    "name": "Nehmat Kohli",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 8544,
+    "typical_max_txn": 28706,
+    "account_age_days": 93
+  },
+  "USR_0343": {
+    "user_id": "USR_0343",
+    "name": "Anya Andra",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 14465,
+    "typical_max_txn": 43827,
+    "account_age_days": 2327
+  },
+  "USR_0344": {
+    "user_id": "USR_0344",
+    "name": "Parinaaz Kara",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 7020,
+    "typical_max_txn": 34240,
+    "account_age_days": 1551
+  },
+  "USR_0345": {
+    "user_id": "USR_0345",
+    "name": "Yakshit Gupta",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 14453,
+    "typical_max_txn": 52357,
+    "account_age_days": 2752
+  },
+  "USR_0346": {
+    "user_id": "USR_0346",
+    "name": "Nirvaan Kade",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 14717,
+    "typical_max_txn": 69037,
+    "account_age_days": 1060
+  },
+  "USR_0347": {
+    "user_id": "USR_0347",
+    "name": "Hiran Divan",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6101,
+    "typical_max_txn": 18156,
+    "account_age_days": 881
+  },
+  "USR_0348": {
+    "user_id": "USR_0348",
+    "name": "Raunak Behl",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 13417,
+    "typical_max_txn": 48148,
+    "account_age_days": 3320
+  },
+  "USR_0349": {
+    "user_id": "USR_0349",
+    "name": "Faiyaz Krishna",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 14767,
+    "typical_max_txn": 55704,
+    "account_age_days": 2717
+  },
+  "USR_0350": {
+    "user_id": "USR_0350",
+    "name": "Rohan Keer",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 9488,
+    "typical_max_txn": 27497,
+    "account_age_days": 2395
+  },
+  "USR_0351": {
+    "user_id": "USR_0351",
+    "name": "Kismat Sant",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 12891,
+    "typical_max_txn": 38253,
+    "account_age_days": 903
+  },
+  "USR_0352": {
+    "user_id": "USR_0352",
+    "name": "Mamooty Rout",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 3072,
+    "typical_max_txn": 14201,
+    "account_age_days": 592
+  },
+  "USR_0353": {
+    "user_id": "USR_0353",
+    "name": "Heer Gandhi",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 522,
+    "typical_max_txn": 1923,
+    "account_age_days": 1055
+  },
+  "USR_0354": {
+    "user_id": "USR_0354",
+    "name": "Urvi Gill",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 4133,
+    "typical_max_txn": 17984,
+    "account_age_days": 2896
+  },
+  "USR_0355": {
+    "user_id": "USR_0355",
+    "name": "Neelofar Sathe",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 9706,
+    "typical_max_txn": 33279,
+    "account_age_days": 1616
+  },
+  "USR_0356": {
+    "user_id": "USR_0356",
+    "name": "Aarav Kala",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 14274,
+    "typical_max_txn": 57435,
+    "account_age_days": 3630
+  },
+  "USR_0357": {
+    "user_id": "USR_0357",
+    "name": "Adira Trivedi",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 4207,
+    "typical_max_txn": 19805,
+    "account_age_days": 2978
+  },
+  "USR_0358": {
+    "user_id": "USR_0358",
+    "name": "Indrajit Bhandari",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 4371,
+    "typical_max_txn": 11170,
+    "account_age_days": 2881
+  },
+  "USR_0359": {
+    "user_id": "USR_0359",
+    "name": "Shalv Banik",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 2982,
+    "typical_max_txn": 6875,
+    "account_age_days": 2065
+  },
+  "USR_0360": {
+    "user_id": "USR_0360",
+    "name": "Madhup Mand",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 6693,
+    "typical_max_txn": 32568,
+    "account_age_days": 2393
+  },
+  "USR_0361": {
+    "user_id": "USR_0361",
+    "name": "Mohanlal De",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 11803,
+    "typical_max_txn": 38937,
+    "account_age_days": 1886
+  },
+  "USR_0362": {
+    "user_id": "USR_0362",
+    "name": "Advika Ram",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 2525,
+    "typical_max_txn": 12320,
+    "account_age_days": 159
+  },
+  "USR_0363": {
+    "user_id": "USR_0363",
+    "name": "Aniruddh Atwal",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 11219,
+    "typical_max_txn": 23820,
+    "account_age_days": 402
+  },
+  "USR_0364": {
+    "user_id": "USR_0364",
+    "name": "Advika Kunda",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 1243,
+    "typical_max_txn": 2730,
+    "account_age_days": 920
+  },
+  "USR_0365": {
+    "user_id": "USR_0365",
+    "name": "Tara Kothari",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 14776,
+    "typical_max_txn": 52429,
+    "account_age_days": 1677
+  },
+  "USR_0366": {
+    "user_id": "USR_0366",
+    "name": "Ritvik Kale",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 11957,
+    "typical_max_txn": 25742,
+    "account_age_days": 1161
+  },
+  "USR_0367": {
+    "user_id": "USR_0367",
+    "name": "Mohanlal Agate",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 12853,
+    "typical_max_txn": 40532,
+    "account_age_days": 433
+  },
+  "USR_0368": {
+    "user_id": "USR_0368",
+    "name": "Diya Sule",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 11773,
+    "typical_max_txn": 48205,
+    "account_age_days": 249
+  },
+  "USR_0369": {
+    "user_id": "USR_0369",
+    "name": "Kiara Ramachandran",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 7014,
+    "typical_max_txn": 20384,
+    "account_age_days": 779
+  },
+  "USR_0370": {
+    "user_id": "USR_0370",
+    "name": "Taimur Chaudhary",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 7612,
+    "typical_max_txn": 24737,
+    "account_age_days": 1456
+  },
+  "USR_0371": {
+    "user_id": "USR_0371",
+    "name": "Hansh Sankaran",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 2696,
+    "typical_max_txn": 6298,
+    "account_age_days": 36
+  },
+  "USR_0372": {
+    "user_id": "USR_0372",
+    "name": "Indrajit Varghese",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6514,
+    "typical_max_txn": 13052,
+    "account_age_days": 3153
+  },
+  "USR_0373": {
+    "user_id": "USR_0373",
+    "name": "Amani Hayer",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 2110,
+    "typical_max_txn": 7318,
+    "account_age_days": 1869
+  },
+  "USR_0374": {
+    "user_id": "USR_0374",
+    "name": "Himmat Thaker",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 924,
+    "typical_max_txn": 3043,
+    "account_age_days": 1235
+  },
+  "USR_0375": {
+    "user_id": "USR_0375",
+    "name": "Shamik Sandhu",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 8491,
+    "typical_max_txn": 38409,
+    "account_age_days": 2855
+  },
+  "USR_0376": {
+    "user_id": "USR_0376",
+    "name": "Vidur Baria",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 8181,
+    "typical_max_txn": 24276,
+    "account_age_days": 972
+  },
+  "USR_0377": {
+    "user_id": "USR_0377",
+    "name": "Rasha Iyengar",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 9163,
+    "typical_max_txn": 31516,
+    "account_age_days": 907
+  },
+  "USR_0378": {
+    "user_id": "USR_0378",
+    "name": "Vivaan Dhar",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 13017,
+    "typical_max_txn": 34947,
+    "account_age_days": 2503
+  },
+  "USR_0379": {
+    "user_id": "USR_0379",
+    "name": "Advik Bahl",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 11287,
+    "typical_max_txn": 54077,
+    "account_age_days": 1227
+  },
+  "USR_0380": {
+    "user_id": "USR_0380",
+    "name": "Ryan Sibal",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 7498,
+    "typical_max_txn": 25360,
+    "account_age_days": 205
+  },
+  "USR_0381": {
+    "user_id": "USR_0381",
+    "name": "Nirvi Sankar",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 13027,
+    "typical_max_txn": 31933,
+    "account_age_days": 2605
+  },
+  "USR_0382": {
+    "user_id": "USR_0382",
+    "name": "Anya Mammen",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 9252,
+    "typical_max_txn": 22340,
+    "account_age_days": 201
+  },
+  "USR_0383": {
+    "user_id": "USR_0383",
+    "name": "Miraan Wason",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 798,
+    "typical_max_txn": 1618,
+    "account_age_days": 3356
+  },
+  "USR_0384": {
+    "user_id": "USR_0384",
+    "name": "Anya Ganguly",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 14026,
+    "typical_max_txn": 29368,
+    "account_age_days": 711
+  },
+  "USR_0385": {
+    "user_id": "USR_0385",
+    "name": "Rasha Buch",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 2726,
+    "typical_max_txn": 10523,
+    "account_age_days": 430
+  },
+  "USR_0386": {
+    "user_id": "USR_0386",
+    "name": "Mohanlal Thakkar",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 7394,
+    "typical_max_txn": 27414,
+    "account_age_days": 904
+  },
+  "USR_0387": {
+    "user_id": "USR_0387",
+    "name": "Farhan Shan",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 3845,
+    "typical_max_txn": 17488,
+    "account_age_days": 2166
+  },
+  "USR_0388": {
+    "user_id": "USR_0388",
+    "name": "Jivika Maharaj",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 7662,
+    "typical_max_txn": 34939,
+    "account_age_days": 47
+  },
+  "USR_0389": {
+    "user_id": "USR_0389",
+    "name": "Hiran Thaman",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 8232,
+    "typical_max_txn": 20483,
+    "account_age_days": 2271
+  },
+  "USR_0390": {
+    "user_id": "USR_0390",
+    "name": "Trisha Venkataraman",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 13502,
+    "typical_max_txn": 61656,
+    "account_age_days": 2828
+  },
+  "USR_0391": {
+    "user_id": "USR_0391",
+    "name": "Mohanlal Sabharwal",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 4721,
+    "typical_max_txn": 22454,
+    "account_age_days": 950
+  },
+  "USR_0392": {
+    "user_id": "USR_0392",
+    "name": "Krish Chaudry",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 8575,
+    "typical_max_txn": 32673,
+    "account_age_days": 1675
+  },
+  "USR_0393": {
+    "user_id": "USR_0393",
+    "name": "Baiju Kunda",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 13686,
+    "typical_max_txn": 42215,
+    "account_age_days": 3594
+  },
+  "USR_0394": {
+    "user_id": "USR_0394",
+    "name": "Sahil Dewan",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 11145,
+    "typical_max_txn": 32935,
+    "account_age_days": 2973
+  },
+  "USR_0395": {
+    "user_id": "USR_0395",
+    "name": "Urvi Dyal",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 8448,
+    "typical_max_txn": 32121,
+    "account_age_days": 2923
+  },
+  "USR_0396": {
+    "user_id": "USR_0396",
+    "name": "Ishaan Vala",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 4798,
+    "typical_max_txn": 15555,
+    "account_age_days": 813
+  },
+  "USR_0397": {
+    "user_id": "USR_0397",
+    "name": "Charvi Goyal",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 9717,
+    "typical_max_txn": 21710,
+    "account_age_days": 1179
+  },
+  "USR_0398": {
+    "user_id": "USR_0398",
+    "name": "Umang Hayer",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 12997,
+    "typical_max_txn": 39503,
+    "account_age_days": 138
+  },
+  "USR_0399": {
+    "user_id": "USR_0399",
+    "name": "Umang Balasubramanian",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 6058,
+    "typical_max_txn": 15123,
+    "account_age_days": 98
+  },
+  "USR_0400": {
+    "user_id": "USR_0400",
+    "name": "Emir Chandran",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 10057,
+    "typical_max_txn": 41477,
+    "account_age_days": 2655
+  },
+  "USR_0401": {
+    "user_id": "USR_0401",
+    "name": "Samiha Swaminathan",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 4871,
+    "typical_max_txn": 14376,
+    "account_age_days": 2703
+  },
+  "USR_0402": {
+    "user_id": "USR_0402",
+    "name": "Shaan Bhalla",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 2300,
+    "typical_max_txn": 8697,
+    "account_age_days": 3251
+  },
+  "USR_0403": {
+    "user_id": "USR_0403",
+    "name": "Ayesha Anand",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 3926,
+    "typical_max_txn": 9544,
+    "account_age_days": 486
+  },
+  "USR_0404": {
+    "user_id": "USR_0404",
+    "name": "Kaira Ranganathan",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 10218,
+    "typical_max_txn": 25737,
+    "account_age_days": 2539
+  },
+  "USR_0405": {
+    "user_id": "USR_0405",
+    "name": "Divij Korpal",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 12018,
+    "typical_max_txn": 59793,
+    "account_age_days": 1866
+  },
+  "USR_0406": {
+    "user_id": "USR_0406",
+    "name": "Ivan Luthra",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 4342,
+    "typical_max_txn": 8899,
+    "account_age_days": 44
+  },
+  "USR_0407": {
+    "user_id": "USR_0407",
+    "name": "Drishya Aggarwal",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 8523,
+    "typical_max_txn": 31994,
+    "account_age_days": 3624
+  },
+  "USR_0408": {
+    "user_id": "USR_0408",
+    "name": "Dhanush Sem",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 6128,
+    "typical_max_txn": 28752,
+    "account_age_days": 489
+  },
+  "USR_0409": {
+    "user_id": "USR_0409",
+    "name": "Zara Rama",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 1820,
+    "typical_max_txn": 6567,
+    "account_age_days": 3216
+  },
+  "USR_0410": {
+    "user_id": "USR_0410",
+    "name": "Amira Salvi",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 2898,
+    "typical_max_txn": 8171,
+    "account_age_days": 2280
+  },
+  "USR_0411": {
+    "user_id": "USR_0411",
+    "name": "Mohanlal Sandhu",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 10963,
+    "typical_max_txn": 41480,
+    "account_age_days": 212
+  },
+  "USR_0412": {
+    "user_id": "USR_0412",
+    "name": "Sumer Dutta",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 2414,
+    "typical_max_txn": 9633,
+    "account_age_days": 1097
+  },
+  "USR_0413": {
+    "user_id": "USR_0413",
+    "name": "Riya Master",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 14662,
+    "typical_max_txn": 30122,
+    "account_age_days": 3057
+  },
+  "USR_0414": {
+    "user_id": "USR_0414",
+    "name": "Keya Sarma",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 1252,
+    "typical_max_txn": 3372,
+    "account_age_days": 2186
+  },
+  "USR_0415": {
+    "user_id": "USR_0415",
+    "name": "Baiju Wason",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 12787,
+    "typical_max_txn": 35304,
+    "account_age_days": 3193
+  },
+  "USR_0416": {
+    "user_id": "USR_0416",
+    "name": "Vardaniya Thaker",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 9485,
+    "typical_max_txn": 34721,
+    "account_age_days": 2240
+  },
+  "USR_0417": {
+    "user_id": "USR_0417",
+    "name": "Amira Bahri",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 8116,
+    "typical_max_txn": 32730,
+    "account_age_days": 1464
+  },
+  "USR_0418": {
+    "user_id": "USR_0418",
+    "name": "Amani Yohannan",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 8223,
+    "typical_max_txn": 30431,
+    "account_age_days": 2657
+  },
+  "USR_0419": {
+    "user_id": "USR_0419",
+    "name": "Uthkarsh Khatri",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 4381,
+    "typical_max_txn": 21687,
+    "account_age_days": 2775
+  },
+  "USR_0420": {
+    "user_id": "USR_0420",
+    "name": "Alia Sha",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 2671,
+    "typical_max_txn": 9465,
+    "account_age_days": 1547
+  },
+  "USR_0421": {
+    "user_id": "USR_0421",
+    "name": "Yuvaan Raj",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 14168,
+    "typical_max_txn": 62170,
+    "account_age_days": 75
+  },
+  "USR_0422": {
+    "user_id": "USR_0422",
+    "name": "Advik Kota",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 5697,
+    "typical_max_txn": 18366,
+    "account_age_days": 1913
+  },
+  "USR_0423": {
+    "user_id": "USR_0423",
+    "name": "Zara Khare",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 14122,
+    "typical_max_txn": 65935,
+    "account_age_days": 370
+  },
+  "USR_0424": {
+    "user_id": "USR_0424",
+    "name": "Armaan Suri",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 10032,
+    "typical_max_txn": 40606,
+    "account_age_days": 1459
+  },
+  "USR_0425": {
+    "user_id": "USR_0425",
+    "name": "Baiju Ganesan",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 7297,
+    "typical_max_txn": 35643,
+    "account_age_days": 570
+  },
+  "USR_0426": {
+    "user_id": "USR_0426",
+    "name": "Khushi Dua",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 4348,
+    "typical_max_txn": 11298,
+    "account_age_days": 675
+  },
+  "USR_0427": {
+    "user_id": "USR_0427",
+    "name": "Myra Wali",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 13838,
+    "typical_max_txn": 65560,
+    "account_age_days": 3139
+  },
+  "USR_0428": {
+    "user_id": "USR_0428",
+    "name": "Jiya Saxena",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 4034,
+    "typical_max_txn": 13753,
+    "account_age_days": 797
+  },
+  "USR_0429": {
+    "user_id": "USR_0429",
+    "name": "Shayak Yohannan",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 13259,
+    "typical_max_txn": 61456,
+    "account_age_days": 2685
+  },
+  "USR_0430": {
+    "user_id": "USR_0430",
+    "name": "Jayant Karan",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 9865,
+    "typical_max_txn": 35031,
+    "account_age_days": 1402
+  },
+  "USR_0431": {
+    "user_id": "USR_0431",
+    "name": "Zoya Bakshi",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 1787,
+    "typical_max_txn": 7493,
+    "account_age_days": 2715
+  },
+  "USR_0432": {
+    "user_id": "USR_0432",
+    "name": "Miraan Sagar",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 8242,
+    "typical_max_txn": 30576,
+    "account_age_days": 2864
+  },
+  "USR_0433": {
+    "user_id": "USR_0433",
+    "name": "Jivin Krish",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 6943,
+    "typical_max_txn": 32714,
+    "account_age_days": 408
+  },
+  "USR_0434": {
+    "user_id": "USR_0434",
+    "name": "Ritvik Brar",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 10642,
+    "typical_max_txn": 46764,
+    "account_age_days": 3163
+  },
+  "USR_0435": {
+    "user_id": "USR_0435",
+    "name": "Hansh Gupta",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 7791,
+    "typical_max_txn": 20359,
+    "account_age_days": 391
+  },
+  "USR_0436": {
+    "user_id": "USR_0436",
+    "name": "Shamik Bumb",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6749,
+    "typical_max_txn": 13966,
+    "account_age_days": 2721
+  },
+  "USR_0437": {
+    "user_id": "USR_0437",
+    "name": "Manikya Singh",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 3550,
+    "typical_max_txn": 11116,
+    "account_age_days": 3574
+  },
+  "USR_0438": {
+    "user_id": "USR_0438",
+    "name": "Ivana Ramesh",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 12172,
+    "typical_max_txn": 56754,
+    "account_age_days": 2633
+  },
+  "USR_0439": {
+    "user_id": "USR_0439",
+    "name": "Taimur Magar",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 9616,
+    "typical_max_txn": 28438,
+    "account_age_days": 1458
+  },
+  "USR_0440": {
+    "user_id": "USR_0440",
+    "name": "Seher Gill",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 5547,
+    "typical_max_txn": 20762,
+    "account_age_days": 2233
+  },
+  "USR_0441": {
+    "user_id": "USR_0441",
+    "name": "Khushi Saha",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 6077,
+    "typical_max_txn": 23124,
+    "account_age_days": 1511
+  },
+  "USR_0442": {
+    "user_id": "USR_0442",
+    "name": "Alia Bora",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 8848,
+    "typical_max_txn": 30109,
+    "account_age_days": 3416
+  },
+  "USR_0443": {
+    "user_id": "USR_0443",
+    "name": "Mannat Manda",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 1481,
+    "typical_max_txn": 4637,
+    "account_age_days": 742
+  },
+  "USR_0444": {
+    "user_id": "USR_0444",
+    "name": "Reyansh Dyal",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 5758,
+    "typical_max_txn": 13780,
+    "account_age_days": 1456
+  },
+  "USR_0445": {
+    "user_id": "USR_0445",
+    "name": "Siya Srinivasan",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 5317,
+    "typical_max_txn": 21553,
+    "account_age_days": 619
+  },
+  "USR_0446": {
+    "user_id": "USR_0446",
+    "name": "Aarav Golla",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 1178,
+    "typical_max_txn": 5730,
+    "account_age_days": 1258
+  },
+  "USR_0447": {
+    "user_id": "USR_0447",
+    "name": "Manjari Bajwa",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 11045,
+    "typical_max_txn": 25367,
+    "account_age_days": 911
+  },
+  "USR_0448": {
+    "user_id": "USR_0448",
+    "name": "Reyansh Vaidya",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 7356,
+    "typical_max_txn": 34154,
+    "account_age_days": 2757
+  },
+  "USR_0449": {
+    "user_id": "USR_0449",
+    "name": "Dhanuk Borde",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 5485,
+    "typical_max_txn": 14295,
+    "account_age_days": 1036
+  },
+  "USR_0450": {
+    "user_id": "USR_0450",
+    "name": "Damini Varghese",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 14646,
+    "typical_max_txn": 52228,
+    "account_age_days": 702
+  },
+  "USR_0451": {
+    "user_id": "USR_0451",
+    "name": "Ayesha Bassi",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 1327,
+    "typical_max_txn": 3686,
+    "account_age_days": 1725
+  },
+  "USR_0452": {
+    "user_id": "USR_0452",
+    "name": "Jayan Tailor",
+    "home_city": "Ahmedabad",
+    "home_lat": 23.0225,
+    "home_lon": 72.5714,
+    "avg_monthly_spend": 2355,
+    "typical_max_txn": 8111,
+    "account_age_days": 193
+  },
+  "USR_0453": {
+    "user_id": "USR_0453",
+    "name": "Mishti Jha",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 1802,
+    "typical_max_txn": 7131,
+    "account_age_days": 3502
+  },
+  "USR_0454": {
+    "user_id": "USR_0454",
+    "name": "Mehul Zachariah",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 10265,
+    "typical_max_txn": 23938,
+    "account_age_days": 1823
+  },
+  "USR_0455": {
+    "user_id": "USR_0455",
+    "name": "Aaina Das",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 3893,
+    "typical_max_txn": 11228,
+    "account_age_days": 943
+  },
+  "USR_0456": {
+    "user_id": "USR_0456",
+    "name": "Vaibhav Chanda",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 5033,
+    "typical_max_txn": 23303,
+    "account_age_days": 2798
+  },
+  "USR_0457": {
+    "user_id": "USR_0457",
+    "name": "Tejas Kaur",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 11703,
+    "typical_max_txn": 57973,
+    "account_age_days": 3293
+  },
+  "USR_0458": {
+    "user_id": "USR_0458",
+    "name": "Mahika Taneja",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 9402,
+    "typical_max_txn": 45684,
+    "account_age_days": 3586
+  },
+  "USR_0459": {
+    "user_id": "USR_0459",
+    "name": "Rania Bajwa",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 9034,
+    "typical_max_txn": 21802,
+    "account_age_days": 289
+  },
+  "USR_0460": {
+    "user_id": "USR_0460",
+    "name": "Ayesha Dhingra",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 14148,
+    "typical_max_txn": 51763,
+    "account_age_days": 1132
+  },
+  "USR_0461": {
+    "user_id": "USR_0461",
+    "name": "Bhamini Sandal",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 6664,
+    "typical_max_txn": 30237,
+    "account_age_days": 381
+  },
+  "USR_0462": {
+    "user_id": "USR_0462",
+    "name": "Sumer Venkataraman",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 11272,
+    "typical_max_txn": 40884,
+    "account_age_days": 2262
+  },
+  "USR_0463": {
+    "user_id": "USR_0463",
+    "name": "Taimur Rama",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 8054,
+    "typical_max_txn": 22227,
+    "account_age_days": 628
+  },
+  "USR_0464": {
+    "user_id": "USR_0464",
+    "name": "Adira Datta",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 7087,
+    "typical_max_txn": 32286,
+    "account_age_days": 610
+  },
+  "USR_0465": {
+    "user_id": "USR_0465",
+    "name": "Diya Kale",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 5937,
+    "typical_max_txn": 24967,
+    "account_age_days": 2144
+  },
+  "USR_0466": {
+    "user_id": "USR_0466",
+    "name": "Jayan De",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 11227,
+    "typical_max_txn": 34958,
+    "account_age_days": 1101
+  },
+  "USR_0467": {
+    "user_id": "USR_0467",
+    "name": "Shlok Sidhu",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 12610,
+    "typical_max_txn": 53971,
+    "account_age_days": 1495
+  },
+  "USR_0468": {
+    "user_id": "USR_0468",
+    "name": "Lagan Sankaran",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 937,
+    "typical_max_txn": 2455,
+    "account_age_days": 2825
+  },
+  "USR_0469": {
+    "user_id": "USR_0469",
+    "name": "Purab Srinivas",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 9248,
+    "typical_max_txn": 21843,
+    "account_age_days": 3438
+  },
+  "USR_0470": {
+    "user_id": "USR_0470",
+    "name": "Ivana Madan",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 3877,
+    "typical_max_txn": 8921,
+    "account_age_days": 3273
+  },
+  "USR_0471": {
+    "user_id": "USR_0471",
+    "name": "Advik Chaudhuri",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 6081,
+    "typical_max_txn": 27604,
+    "account_age_days": 987
+  },
+  "USR_0472": {
+    "user_id": "USR_0472",
+    "name": "Amira Chaudhry",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 9456,
+    "typical_max_txn": 30644,
+    "account_age_days": 679
+  },
+  "USR_0473": {
+    "user_id": "USR_0473",
+    "name": "Nirvi Dutt",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 1391,
+    "typical_max_txn": 3805,
+    "account_age_days": 1658
+  },
+  "USR_0474": {
+    "user_id": "USR_0474",
+    "name": "Khushi Bandi",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 13245,
+    "typical_max_txn": 60317,
+    "account_age_days": 2601
+  },
+  "USR_0475": {
+    "user_id": "USR_0475",
+    "name": "Devansh Bhasin",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 8827,
+    "typical_max_txn": 26639,
+    "account_age_days": 3195
+  },
+  "USR_0476": {
+    "user_id": "USR_0476",
+    "name": "Anay Dugar",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 8255,
+    "typical_max_txn": 22661,
+    "account_age_days": 1951
+  },
+  "USR_0477": {
+    "user_id": "USR_0477",
+    "name": "Kismat Khatri",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 5329,
+    "typical_max_txn": 13235,
+    "account_age_days": 916
+  },
+  "USR_0478": {
+    "user_id": "USR_0478",
+    "name": "Taran Korpal",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 1029,
+    "typical_max_txn": 4799,
+    "account_age_days": 3432
+  },
+  "USR_0479": {
+    "user_id": "USR_0479",
+    "name": "Hridaan Chad",
+    "home_city": "Delhi",
+    "home_lat": 28.6139,
+    "home_lon": 77.209,
+    "avg_monthly_spend": 544,
+    "typical_max_txn": 1932,
+    "account_age_days": 2844
+  },
+  "USR_0480": {
+    "user_id": "USR_0480",
+    "name": "Oorja Banik",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 4592,
+    "typical_max_txn": 16481,
+    "account_age_days": 1806
+  },
+  "USR_0481": {
+    "user_id": "USR_0481",
+    "name": "Prisha Baria",
+    "home_city": "Jaipur",
+    "home_lat": 26.9124,
+    "home_lon": 75.7873,
+    "avg_monthly_spend": 6202,
+    "typical_max_txn": 20489,
+    "account_age_days": 1972
+  },
+  "USR_0482": {
+    "user_id": "USR_0482",
+    "name": "Akarsh Dhar",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 5739,
+    "typical_max_txn": 13641,
+    "account_age_days": 506
+  },
+  "USR_0483": {
+    "user_id": "USR_0483",
+    "name": "Sana Golla",
+    "home_city": "Surat",
+    "home_lat": 21.1702,
+    "home_lon": 72.8311,
+    "avg_monthly_spend": 3146,
+    "typical_max_txn": 10841,
+    "account_age_days": 3477
+  },
+  "USR_0484": {
+    "user_id": "USR_0484",
+    "name": "Emir Ramesh",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 12597,
+    "typical_max_txn": 31375,
+    "account_age_days": 3480
+  },
+  "USR_0485": {
+    "user_id": "USR_0485",
+    "name": "Saanvi Chaudhary",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 5902,
+    "typical_max_txn": 15481,
+    "account_age_days": 2036
+  },
+  "USR_0486": {
+    "user_id": "USR_0486",
+    "name": "Anvi Borah",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 2883,
+    "typical_max_txn": 6025,
+    "account_age_days": 946
+  },
+  "USR_0487": {
+    "user_id": "USR_0487",
+    "name": "Urvi Jain",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 6011,
+    "typical_max_txn": 28555,
+    "account_age_days": 460
+  },
+  "USR_0488": {
+    "user_id": "USR_0488",
+    "name": "Badal Ahluwalia",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 524,
+    "typical_max_txn": 2003,
+    "account_age_days": 1193
+  },
+  "USR_0489": {
+    "user_id": "USR_0489",
+    "name": "Farhan Doshi",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 1540,
+    "typical_max_txn": 4930,
+    "account_age_days": 1713
+  },
+  "USR_0490": {
+    "user_id": "USR_0490",
+    "name": "Yashvi Lal",
+    "home_city": "Mumbai",
+    "home_lat": 19.076,
+    "home_lon": 72.8777,
+    "avg_monthly_spend": 8165,
+    "typical_max_txn": 20916,
+    "account_age_days": 1955
+  },
+  "USR_0491": {
+    "user_id": "USR_0491",
+    "name": "Heer Sem",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 12675,
+    "typical_max_txn": 56466,
+    "account_age_days": 3608
+  },
+  "USR_0492": {
+    "user_id": "USR_0492",
+    "name": "Saanvi Kohli",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 12345,
+    "typical_max_txn": 42050,
+    "account_age_days": 2714
+  },
+  "USR_0493": {
+    "user_id": "USR_0493",
+    "name": "Divit Lata",
+    "home_city": "Kolkata",
+    "home_lat": 22.5726,
+    "home_lon": 88.3639,
+    "avg_monthly_spend": 12668,
+    "typical_max_txn": 60324,
+    "account_age_days": 583
+  },
+  "USR_0494": {
+    "user_id": "USR_0494",
+    "name": "Yuvraj  Sule",
+    "home_city": "Pune",
+    "home_lat": 18.5204,
+    "home_lon": 73.8567,
+    "avg_monthly_spend": 10387,
+    "typical_max_txn": 22335,
+    "account_age_days": 1265
+  },
+  "USR_0495": {
+    "user_id": "USR_0495",
+    "name": "Rati Malhotra",
+    "home_city": "Lucknow",
+    "home_lat": 26.8467,
+    "home_lon": 80.9462,
+    "avg_monthly_spend": 14011,
+    "typical_max_txn": 61415,
+    "account_age_days": 1269
+  },
+  "USR_0496": {
+    "user_id": "USR_0496",
+    "name": "Drishya Kunda",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 10034,
+    "typical_max_txn": 42669,
+    "account_age_days": 2284
+  },
+  "USR_0497": {
+    "user_id": "USR_0497",
+    "name": "Jivin Bhatia",
+    "home_city": "Hyderabad",
+    "home_lat": 17.385,
+    "home_lon": 78.4867,
+    "avg_monthly_spend": 9741,
+    "typical_max_txn": 25675,
+    "account_age_days": 2902
+  },
+  "USR_0498": {
+    "user_id": "USR_0498",
+    "name": "Shaan Chatterjee",
+    "home_city": "Chennai",
+    "home_lat": 13.0827,
+    "home_lon": 80.2707,
+    "avg_monthly_spend": 3554,
+    "typical_max_txn": 11777,
+    "account_age_days": 3374
+  },
+  "USR_0499": {
+    "user_id": "USR_0499",
+    "name": "Yuvraj  Ranganathan",
+    "home_city": "Bengaluru",
+    "home_lat": 12.9716,
+    "home_lon": 77.5946,
+    "avg_monthly_spend": 4664,
+    "typical_max_txn": 9360,
+    "account_age_days": 2343
+  },
+  "USR_0500": {
+    "user_id": "USR_0500",
+    "name": "Ivana Kumer",
+    "home_city": "Kochi",
+    "home_lat": 9.9312,
+    "home_lon": 76.2673,
+    "avg_monthly_spend": 8513,
+    "typical_max_txn": 24199,
+    "account_age_days": 3625
+  }
+}
